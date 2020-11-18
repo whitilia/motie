@@ -1,0 +1,53 @@
+@media screen and (max-width:720px){
+/* common */
+.content_wrap{padding: 40px;}
+
+
+
+/* tbl_wrap */
+.tbl_wrap table tr{display:block;}
+.tbl_wrap table th{display:block;width:100%;border-left:none;}
+.tbl_wrap table td{display:block;width:100%;border-left:none;line-height: 38px;}
+
+/* horizontal */
+.tbl_wrap.horizontal table tr{display:block;position:relative;border-bottom: 1px solid #D4D8DB;padding: 10px;}
+.tbl_wrap.horizontal table thead{display:none;}
+.tbl_wrap.horizontal table td{display: inline-block;position:relative;padding:0 10px;border: none;line-height: 38px;}
+
+/* flex01 */
+.tbl_wrap.horizontal.flex01 table td:nth-child(1){width: 30px;background: url(../images/contents/bg_num.png) top 8px center no-repeat;}
+.tbl_wrap.horizontal.flex01 table td:nth-child(3):before{content: '';display:block;position:absolute;top:14px;left:0;width:1px;height:13px;background:#C4C4C4;}
+.tbl_wrap.horizontal.flex01 table td:nth-child(4){padding-left: 55px;font-size: 14px;}
+.tbl_wrap.horizontal.flex01 table td:nth-child(4):before{content: '기관명';display:block;position:absolute;top:0;left:10px;width:auto;height:auto;font-size: 14px;color:#666;}
+.tbl_wrap.horizontal.flex01 table td:nth-child(5){padding-left: 55px;font-size: 14px;}
+.tbl_wrap.horizontal.flex01 table td:nth-child(5):before{content: '부서명';display:block;position:absolute;top:0;left:10px;width:auto;height:auto;font-size: 14px;color:#666;}
+
+/* flex02 */
+.tbl_wrap.horizontal.flex02 table td:nth-child(1){width: 30px;background: url(../images/contents/bg_num.png) top 8px center no-repeat;}
+.tbl_wrap.horizontal.flex02 table td:nth-child(3):before,
+.tbl_wrap.horizontal.flex02 table td:nth-child(4):before{content: '';display:block;position:absolute;top:14px;left:0;width:1px;height:13px;background:#C4C4C4;}
+.tbl_wrap.horizontal.flex02 table td:nth-child(5){padding-left: 65px;font-size: 14px;}
+.tbl_wrap.horizontal.flex02 table td:nth-child(5):before{content: '회의실명';display:block;position:absolute;top:0;left:10px;width:auto;height:auto;font-size: 14px;color:#666;}
+.tbl_wrap.horizontal.flex02 table td:nth-child(6){padding-left: 55px;font-size: 14px;}
+.tbl_wrap.horizontal.flex02 table td:nth-child(6):before{content: '연락처';display:block;position:absolute;top:0;left:10px;width:auto;height:auto;font-size: 14px;color:#666;}
+
+/* sort_wrap */
+.sort_wrap{padding: 30px;}
+.sort_wrap ul{display:block;}
+.sort_wrap li{display:block;width: 100%;margin-top: 10px;margin-left: 0;text-align: left;}
+.sort_wrap li:first-of-type{margin-top: 0;}
+.sort_wrap li:nth-child(2) .sort_tit,
+.sort_wrap li:nth-child(3) .sort_tit{display: none;}
+.sort_wrap li:nth-child(2) .sort_cont{width: 100%;}
+.sort_wrap li:nth-child(3) .sort_cont{width:-webkit-calc(100% - 106px);width:calc(100% - 106px);}
+.sort_wrap .sort_tit{display:inline-block;margin:0 20px;}
+.sort_wrap .sort_cont{display:inline-block;}
+.sort_wrap .sort_sel_cont{display:inline-block;width:100%;}
+
+/* btn_area */
+.btn_area .fl_r{float: none !important;text-align: center;}
+
+/* modal_wrap */
+.modal_wrap .madal{width: 90%;left: 5%;margin-left: 0;padding: 10px 20px 20px 20px;right: 5%;}
+
+}
