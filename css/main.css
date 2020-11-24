@@ -5,7 +5,7 @@
 #header{height:120px;background:pink;}
 
 /* container */
-#container{height:-webkit-calc(100% - 225px);height:calc(100% - 225px);background:blue;}
+#container{height:-webkit-calc(100% - 225px);height:calc(100% - 225px);}
 .contents{height:100%;}
 
 .main .left_wrap{width:50%;background:grey;}
