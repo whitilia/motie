@@ -14,6 +14,7 @@
 <script src="../../../js/site/kor/common.js"></script>
 <script src="../../../js/site/kor/layout.js"></script>
 <script src="../../../js/site/kor/jquery-ui.js"></script>
+<script src="../../../js/site/kor/content_h.js"></script>
 </head>
 <body>
     <!-- top_layout 시작 -->
@@ -279,6 +280,33 @@
                 <div class="txt">
                 <!-- 본문 시작 -->
                     <div class="component_wrap">
+                        <h3>input</h3>
+                        <span class="input">
+                            <input type="text">
+                        </span>
+<textarea style="width: 100%; height: 200px; background-color: #333; font-size: 14px; text-align: left; color: #999999; padding: 20px; margin-top:30px; box-sizing:border-box;">
+<span class="input">
+    <input type="text">
+</span>
+</textarea>
+                        <h3>calendar</h3>
+                        <span class="input_cal">
+                            <input type="text" class="datepicker">
+                        </span>
+<textarea style="width: 100%; height: 200px; background-color: #333; font-size: 14px; text-align: left; color: #999999; padding: 20px; margin-top:30px; box-sizing:border-box;">
+<span class="input_cal">
+    <input type="text" class="datepicker">
+</span>
+</textarea>
+                        <h3>textarea</h3>
+                        <span class="textarea">
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </span>
+<textarea style="width: 100%; height: 200px; background-color: #333; font-size: 14px; text-align: left; color: #999999; padding: 20px; margin-top:30px; box-sizing:border-box;">
+<span class="textarea">
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+</span>
+</textarea>
                         <h3>select</h3>
                         <span class="select">
                             <select name="" id="">
@@ -294,33 +322,6 @@
         <option value="">선택</option>
         <option value="">선택</option>
     </select>
-</span>
-</textarea>
-                        <h3>input</h3>
-                        <span class="input">
-                            <input type="text">
-                        </span>
-<textarea style="width: 100%; height: 200px; background-color: #333; font-size: 14px; text-align: left; color: #999999; padding: 20px; margin-top:30px; box-sizing:border-box;">
-<span class="input">
-    <input type="text">
-</span>
-</textarea>
-                        <h3>calendar</h3>
-                        <span class="input_cal">
-                            <input type="text" id="datepicker">
-                        </span>
-<textarea style="width: 100%; height: 200px; background-color: #333; font-size: 14px; text-align: left; color: #999999; padding: 20px; margin-top:30px; box-sizing:border-box;">
-<span class="input_cal">
-    <input type="text" id="datepicker">
-</span>
-</textarea>
-                        <h3>textarea</h3>
-                        <span class="textarea">
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
-                        </span>
-<textarea style="width: 100%; height: 200px; background-color: #333; font-size: 14px; text-align: left; color: #999999; padding: 20px; margin-top:30px; box-sizing:border-box;">
-<span class="textarea">
-    <textarea name="" id="" cols="30" rows="10"></textarea>
 </span>
 </textarea>
                         <h3>checkbox</h3>
@@ -377,11 +378,9 @@
                             <button class="btn btn_black"><span>목록</span></button>
                             <button class="btn btn_blue"><span>등록</span></button>
                             <button class="btn btn_search btn_blue"><span>검색</span></button>
-                            <button class="btn btn_file btn_blue"><span>파일선택</span></button>
+                            <button class="btn btn_file"><span>파일선택</span></button>
                         </div>
-                    </div>
 <textarea style="width: 100%; height: 200px; background-color: #333; font-size: 14px; text-align: left; color: #999999; padding: 20px; margin-top:30px; box-sizing:border-box;">
-<div class="paging_area">
 <div class="btn_area">
     <button class="btn btn_L btn_blue"><span>확인</span></button>
     <button class="btn btn_grey"><span>삭제</span></button>
@@ -389,9 +388,87 @@
     <button class="btn btn_black"><span>목록</span></button>
     <button class="btn btn_blue"><span>등록</span></button>
     <button class="btn btn_search btn_blue"><span>검색</span></button>
-    <button class="btn btn_file btn_blue"><span>파일선택</span></button>
+    <button class="btn btn_file"><span>파일선택</span></button>
 </div>
 </textarea>
+                        <h3>button - 02</h3>
+                        <div class="btn_area">
+                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                            <button class="file_download_text"><span>규제개혁위원회 다운로드</span></button>
+                            <button class="file_link_text"><span>신고센터 바로가기</span></button>
+                            <button class="file_download_text"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>규제입증요청양식 다운로드</span></button>
+                        </div>
+<textarea style="width: 100%; height: 200px; background-color: #333; font-size: 14px; text-align: left; color: #999999; padding: 20px; margin-top:30px; box-sizing:border-box;">
+<div class="btn_area">
+    <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+    <button class="file_download_text"><span>규제개혁위원회 다운로드</span></button>
+    <button class="file_link_text"><span>신고센터 바로가기</span></button>
+    <button class="file_download_text"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>규제입증요청양식 다운로드</span></button>
+</div>
+</textarea>
+                        <h3>button - 03</h3>
+                        <div class="btn_area">
+                            <button class="ico_download_visual"><span>동영상</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                            <button class="ico_link_visual"><span>보도자료</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                        </div>
+<textarea style="width: 100%; height: 200px; background-color: #333; font-size: 14px; text-align: left; color: #999999; padding: 20px; margin-top:30px; box-sizing:border-box;">
+<div class="btn_area">
+    <button class="ico_download_visual"><span>동영상</span></button><!-- 활성화시 클래스 'on' 추가 -->
+    <button class="ico_link_visual"><span>보도자료</span></button><!-- 활성화시 클래스 'on' 추가 -->
+</div>
+</textarea>
+                        <h3>button - 04</h3>
+                        <div class="btn_area">
+                            <button class="ico_id_naver"><span>로그인</span></button>
+                            <button class="ico_id_kakao"><span>로그인</span></button>
+                            <button class="ico_id_google"><span>로그인</span></button>
+                        </div>
+<textarea style="width: 100%; height: 200px; background-color: #333; font-size: 14px; text-align: left; color: #999999; padding: 20px; margin-top:30px; box-sizing:border-box;">
+<div class="btn_area">
+    <button class="ico_id_naver"><span>로그인</span></button>
+    <button class="ico_id_kakao"><span>로그인</span></button>
+    <button class="ico_id_google"><span>로그인</span></button>
+</div>
+</textarea>
+                        <h3>button - 05</h3>
+                        <div class="btn_area">
+                            <button class="btn_big btn_blue"><span>규제입증요청 접수</span></button>
+                            <button class="btn_big btn_navy"><span>국민신문고 민원신청 (비규제, 단순민원)</span></button>
+                        </div>
+<textarea style="width: 100%; height: 200px; background-color: #333; font-size: 14px; text-align: left; color: #999999; padding: 20px; margin-top:30px; box-sizing:border-box;">
+<div class="btn_area">
+    <button class="btn_big btn_blue"><span>규제입증요청 접수</span></button>
+    <button class="btn_big btn_navy"><span>국민신문고 민원신청 (비규제, 단순민원)</span></button>
+</div>
+</textarea>
+                        <h3>button - 06</h3>
+                        <div class="btn_area">
+                            <button class="btn_big_circle type01"><span>추천하기</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                            <button class="btn_big_circle type02"><span>적극행정 통합 플랫폼 공무원ㆍ정책 국민추천 서비스</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                        </div>
+<textarea style="width: 100%; height: 200px; background-color: #333; font-size: 14px; text-align: left; color: #999999; padding: 20px; margin-top:30px; box-sizing:border-box;">
+<div class="btn_area">
+    <button class="btn_big_circle type01"><span>추천하기</span></button><!-- 활성화시 클래스 'on' 추가 -->
+    <button class="btn_big_circle type02"><span>적극행정 통합 플랫폼 공무원ㆍ정책 국민추천 서비스</span></button><!-- 활성화시 클래스 'on' 추가 -->
+</div>
+</textarea>
+                        <h3>button - 07</h3>
+                        <div class="btn_area">
+                            <button class="btn_site"><span>보도자료</span></button>
+                            <button class="btn_site link"><span>보도자료</span></button>
+                            <button class="btn_site_text"><span>제목이 이곳에 들어갑니다</span></button>
+                            <button class="btn_site_text link"><span>제목이 이곳에 들어갑니다</span></button>
+                        </div>
+<textarea style="width: 100%; height: 200px; background-color: #333; font-size: 14px; text-align: left; color: #999999; padding: 20px; margin-top:30px; box-sizing:border-box;">
+<div class="btn_area">
+    <button class="btn_site"><span>보도자료</span></button>
+    <button class="btn_site link"><span>보도자료</span></button>
+    <button class="btn_site_text"><span>제목이 이곳에 들어갑니다</span></button>
+    <button class="btn_site_text link"><span>제목이 이곳에 들어갑니다</span></button>
+</div>
+</textarea>
+
+                    </div>
                 <!-- 본문 끝 -->
                 </div>
             </div>
@@ -427,15 +504,3 @@
     <!-- foot_layout 끝 -->
 </body>
 </html>
-<script>
-    $( function() {
-        $( "#datepicker" ).datepicker({
-            changeYear: true,
-            changeMonth: true, 
-            monthNamesShort:[ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" ],
-            dayNamesMin: [ '일', '월', '화', '수', '목', '금', '토'],
-            showMonthAfterYear: true,
-            showOtherMonths: true
-        });
-    });
-</script>

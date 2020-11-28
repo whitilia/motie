@@ -14,6 +14,8 @@
 <script src="../../../js/site/kor/common.js"></script>
 <script src="../../../js/site/kor/layout.js"></script>
 <script src="../../../js/site/kor/jquery-ui.js"></script>
+<script src="../../../js/site/kor/content_h.js"></script>
+<script src="../../../js/site/kor/jquery.scrolltabs.js"></script>
 </head>
 <body>
     <!-- top_layout 시작 -->
@@ -279,6 +281,37 @@
                 <div class="txt">
                 <!-- 본문 시작 -->
                     <div class="component_wrap">
+                        <h3>tab</h3>
+                        <div class="tab_wrap">
+                            <div>
+                                <ul class="tab_navi">
+                                    <li class="on"><a href="#none">tab_navi_tab01</a></li>
+                                    <li><a href="#none">tab_navi_tab02</a></li>
+                                    <li><a href="#none">tab_navi_tab03</a></li>
+                                    <li><a href="#none">tab_navi_tab04</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab_content">tab_content01</div>
+                            <div class="tab_content">tab_content02</div>
+                            <div class="tab_content">tab_content03</div>
+                            <div class="tab_content">tab_content04</div>
+                        </div>
+<textarea style="width: 100%; height: 200px; background-color: #333; font-size: 14px; text-align: left; color: #999999; padding: 20px; margin-top:30px; box-sizing:border-box;">
+<div class="tab_wrap">
+    <div>
+        <ul class="tab_navi">
+            <li class="on"><a href="#none">tab_navi_tab01</a></li>
+            <li><a href="#none">tab_navi_tab02</a></li>
+            <li><a href="#none">tab_navi_tab03</a></li>
+            <li><a href="#none">tab_navi_tab04</a></li>
+        </ul>
+    </div>
+    <div class="tab_content">tab_content01</div>
+    <div class="tab_content">tab_content02</div>
+    <div class="tab_content">tab_content03</div>
+    <div class="tab_content">tab_content04</div>
+</div>
+</textarea>
                         <h3>sorting_wrap - 01</h3>
                         <div class="sorting_wrap">
                             <dl>
@@ -307,11 +340,11 @@
                                     </span>
                                     <div class="cal_area">
                                         <span class="input_cal">
-                                            <input type="text" id="datepicker">
+                                            <input type="text" class="datepicker">
                                         </span>
                                         <span class="wave">~</span>
                                         <span class="input_cal">
-                                            <input type="text" id="datepicker">
+                                            <input type="text" class="datepicker">
                                         </span>
                                     </div>
                                     <div class="btn_area">
@@ -367,11 +400,11 @@
             </span>
             <div class="cal_area">
                 <span class="input_cal">
-                    <input type="text" id="datepicker">
+                    <input type="text" class="datepicker">
                 </span>
                 <span class="wave">~</span>
                 <span class="input_cal">
-                    <input type="text" id="datepicker">
+                    <input type="text" class="datepicker">
                 </span>
             </div>
             <div class="btn_area">
@@ -407,7 +440,7 @@
                                 <dd class="search_area">
                                     <div class="cal_area">
                                         <span class="input_cal">
-                                            <input type="text" id="datepicker">
+                                            <input type="text" class="datepicker">
                                         </span>
                                     </div>
                                     <button class="btn btn_search btn_blue"><span>검색</span></button>
@@ -422,7 +455,7 @@
         <dd class="search_area">
             <div class="cal_area">
                 <span class="input_cal">
-                    <input type="text" id="datepicker">
+                    <input type="text" class="datepicker">
                 </span>
             </div>
             <button class="btn btn_search btn_blue"><span>검색</span></button>
