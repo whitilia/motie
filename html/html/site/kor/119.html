@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="../../../css/site/kor/content.css" media="all" />
 <script src="../../../js/core/jquery-1.11.2.min.js"></script>
 <script src="../../../js/site/kor/jquery.touchSlider.js"></script>
+<script src="../../../js/site/kor/jquery.scrolltabs.js"></script>
 <script src="../../../js/site/kor/common.js"></script>
 <script src="../../../js/site/kor/layout.js"></script>
 <script src="../../../js/site/kor/jquery-ui.js"></script>
@@ -270,7 +271,7 @@
                     </ul>
                 </div>
                 <div class="tit_wrap">
-                    <h3>국민추천</h3>
+                    <h3>일일지표</h3>
                     <ul>
                         <li class="print"><a href="#">프린트</a></li>
                         <li class="fa"><a href="#">페이스북</a></li>
@@ -281,125 +282,123 @@
                 <!-- 본문 시작 -->
 
                     <!-- viewer - default -->
-                    <div class="board_view_wrap board_write_wrap">
+                    <div class="board_view_wrap daily_report">
                         <ul>
                             <li>
-                                <span class="cell head"><span>추천인 (성명 또는 단체명)<em class="essen">*</em></span></span>
-                                <span class="cell w_170">
-                                    <span class="input">
-                                        <input type="text">
-                                    </span>
-                                </span>
-                                <span class="cell head type02"><span>휴대전화<em class="essen">*</em></span></span>
-                                <span class="cell w_425">
-                                    <span class="select">
-                                        <select name="" id="">
-                                            <option value="">선택</option>
-                                            <option value="">선택</option>
-                                            <option value="">선택</option>
-                                        </select>
-                                    </span>
-                                    <span class="wave">-</span>
-                                    <span class="input">
-                                        <input type="text">
-                                    </span>
-                                    <span class="wave">-</span>
-                                    <span class="input">
-                                        <input type="text">
-                                    </span>
-                                </span>
+                                <span class="cell head"><span>제목</span></span>
+                                <span class="cell">문헌정보 산업의 디지털 전환, 국제표준으로 기반 다진다</span>
                             </li>
-                            <li>
-                                <span class="cell head"><span>피추천인 (부처)<em class="essen">*</em></span></span>
-                                <span class="cell w_170">
-                                    <span class="input">
-                                        <input type="text">
-                                    </span>
-                                </span>
-                                <span class="cell head type02"><span>성명 또는 정책명<em class="essen">*</em></span></span>
-                                <span class="cell w_425">
-                                    <span class="input">
-                                        <input type="text">
-                                    </span>
-                                </span>
+                            <li class="col">
+                                <span class="cell head"><span>담당자</span></span>
+                                <span class="cell">박진우</span>
+                                <span class="cell head"><span>담당부서</span></span>
+                                <span class="cell">전기전자정보표준과</span>
+                                <span class="cell head"><span>연락처</span></span>
+                                <span class="cell">043-870-5369</span>
                             </li>
-                            <li class="content">
-                                <span class="cell head"><span>적극 행정 유형<em class="essen">*</em></span></span>
+                            <li class="col">
+                                <span class="cell head"><span>등록일</span></span>
+                                <span class="cell">2020-11-04</span>
+                                <span class="cell head"><span>조회수</span></span>
+                                <span class="cell">785</span>
+                            </li>
+                            <li class="content report">
+                                <span class="cell head"><span>주요일일지표</span></span>
                                 <span class="cell">
-                                    <span class="select">
-                                        <select name="" id="">
-                                            <option value="">선택</option>
-                                            <option value="">선택</option>
-                                            <option value="">선택</option>
-                                        </select>
+                                    <span class="report_area">
+                                        <span class="tit_area"><span>주가(pt)</span></span>
+                                        <span class="cont_area">
+                                            <span class="report_stock">
+                                                <span class="stock_box">
+                                                    <span class="stock down">10.25P</span><!-- 상승시 클래스'up' / 다운시 클래스 'down' 추가 -->
+                                                    <span class="price">2,475.62</span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="report_area">
+                                        <span class="tit_area"><span>환율(원/$)</span></span>
+                                        <span class="cont_area">
+                                            <span class="report_stock">
+                                                <span class="stock_box">
+                                                    <span class="stock up">4.80원</span><!-- 상승시 클래스'up' / 다운시 클래스 'down' 추가 -->
+                                                    <span class="price">1,114.80</span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="report_area">
+                                        <span class="tit_area"><span>유가($/B, Dubai)</span></span>
+                                        <span class="cont_area">
+                                            <span class="report_stock">
+                                                <span class="stock_box">
+                                                    <span class="stock up">4.80원</span><!-- 상승시 클래스'up' / 다운시 클래스 'down' 추가 -->
+                                                    <span class="price">44.44</span>
+                                                </span>
+                                                <span class="txt_noti">11월 11일</span>
+                                            </span>
+                                        </span>
                                     </span>
                                 </span>
                             </li>
-                            <li class="content">
-                                <span class="cell head"><span>추천 제목</span></span>
+                            <li class="content report">
+                                <span class="cell head"><span>주요이슈</span></span>
                                 <span class="cell">
-                                    <span class="input">
-                                        <input type="text">
+                                    <span class="report_area">
+                                        <span class="tit_area"><span>국내</span></span>
+                                        <span class="cont_area">
+                                            <span class="report_txt">KIEP, 내년 세계 성장률 5% 전망…"재정 건전성이 중요"</span>
+                                            <span class="report_txt">한전, 저유가 덕에 3분기 누적 흑자 3조2천억 원</span>
+                                        </span>
+                                    </span>
+                                    <span class="report_area">
+                                        <span class="tit_area"><span>해외</span></span>
+                                        <span class="cont_area">
+                                            <span class="report_txt">모더나 임상 발표 예고, 주가 8.4% 급등…파우치 "기대"</span>
+                                            <span class="report_txt">中 보복소비 터졌다…광군제 83조원 판매 신기록</span>
+                                        </span>
                                     </span>
                                 </span>
                             </li>
-                            <li class="content">
-                                <span class="cell head"><span>추천 내용</span></span>
+                            <li class="content report">
+                                <span class="cell head"><span>금일발표보고서</span></span>
                                 <span class="cell">
-                                    <span class="textarea">
-                                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                                    <span class="report_area">
+                                        <span class="cont_area">
+                                            <span class="report_txt">KIEP, 내년 세계 성장률 5% 전망…"재정 건전성이 중요"</span>
+                                            <span class="report_txt">한전, 저유가 덕에 3분기 누적 흑자 3조2천억 원</span>
+                                        </span>
                                     </span>
                                 </span>
                             </li>
                             <li class="content">
                                 <span class="cell head"><span>첨부파일</span></span>
                                 <span class="cell">
-                                    <span class="input">
-                                        <input type="text" readonly>
-                                    </span>
-                                    <button class="btn btn_file"><span>파일선택</span></button>
+                                    <a href="#none" class="file"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt="">1105(6조간) 전기전자정보표준과, 문헌정보 기술호환성 국제표준화 주도.pdf [144.7 KB]</a>
+                                    <a href="#none" class="file"><img src="../../../images/site/kor/inc/ico_file_hwp.png" alt="">1105(6조간) 전기전자정보표준과, 문헌정보 기술호환성 국제표준화 주도.pdf [144.7 KB]</a>
                                 </span>
-                            </li>
-                            <li>
-                                <div class="text_area">
-                                    <p class="tit">[유의사항]</p>
-                                    <p class="txt">피추천인의 성명 및 부처, 추천내용 등을 상세하게 기재하여 주시기 바랍니다.<br/>
-                                    필수 기재사항(*) 표시</p>
-                                    <p class="txt">추천인 : 성명(소속),휴대전화<br/>
-                                    피추천인 : 성명,부처(해당 부처 선택)<br/>
-                                    적극행정 유형 및 내용 : 해당 유형을 선택 후, 추천 제목 및 내용 서술</p>
-                                    <p class="txt txt_red">피추천인의 성명 및 추천내용 등은 해당자가 적극행정 우수 공무원으로 선정될 경우 일반인에 공개 될 수 있습니다.</p>
-
-                                </div>
-                            </li>
-                            <li>
-                                <div class="text_area">
-                                    <p class="tit">[개인정보 수집 및 이용에 대한 동의]</p>
-                                    <p class="txt">적극행정 우수 공무원 선발을 위해 수집하는 개인정보는 「개인정보보호법」 및 「정보통신망이용촉진 등에 관한 법률」에 따라 개인정보의 이용과 타인에게 제공 및 활용 시 본인의 동의를 얻어야 하는 정보입니다.</p>
-                                    <p class="txt">제1조(개인정보의 처리 목적) 적극행정 우수 공무원을 발굴·육성하기 위한 목적으로 개인정보를 수집 및 이용합니다. 수집된 개인정보는 정해진 목적 이외의 용도로는 사용되지 않으며, 수집 목적 등이 변경될 경우에는 정보주체에게 알리고 동의를 받을 예정입니다.</p>
-                                    <p class="txt">제2조(개인정보의 처리 및 보유 기간) 적극행정 우수 공무원 추천 및 선발을 위해 사용되는 개인정보의 보존기간은 5년이며, 원칙적으로 개인정보의 처리목적이 달성되면 지체없이 파기합니다.</p>
-                                    <p class="txt">제3조(처리하는 개인정보의 항목) 적극행정 우수 공무원을 추천하기 위해 추천인과 피추천인(후보자)의 필수정보 및 선택정보를 아래와 같이 수집하고 있습니다.</p>
-                                    <dl>
-                                        <dt>가. 수집항목</dt>
-                                        <dd>
-                                            <p class="depth1">- 필수항목</p>
-                                            <p class="depth2">추천인 : 성명(소속), 관계(피추천인의), 휴대전화<br/>
-                                            피추천인 : 성명, 소속, 추천제목, 추천내용<br/>
-                                            선택항목 : 이메일(추천인)</p>
-                                        </dd>
-                                    </dl>
-                                    <dl>
-                                        <dt>나. 수집방법 : 인터넷 홈페이지</dt>
-                                        <dd>
-                                            <p class="depth1">개인정보보호법 제15조에 따라서 개인정보 수집 및 이용에 따른 동의를 거부할 수 있으나, 적극행정 우수 공무원을 추천할 수 없습니다.<br/>
-                                            동의하시겠습니까?</p>
-                                        </dd>
-                                    </dl>
-                                </div>
                             </li>
                         </ul>
                         <div class="btn_area">
-                            <button class="btn btn_blue"><span>등록</span></button>
+                            <button class="btn btn_black"><span>목록</span></button>
+                        </div>
+                        <div class="board_view_navi">
+                            <ul>
+                                <li>
+                                    <a href="#none">
+                                        <span>이전글</span>
+                                        <span class="prev">이전</span>
+                                        <span>(참고자료)한국, G20 표준 서밋에 K-방... 새 게시물</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <span>다음글</span>
+                                        <span class="next">다음</span>
+                                        <span>다음글이 없습니다.</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <!-- //viewer - default -->

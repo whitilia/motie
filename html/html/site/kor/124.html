@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="../../../css/site/kor/content.css" media="all" />
 <script src="../../../js/core/jquery-1.11.2.min.js"></script>
 <script src="../../../js/site/kor/jquery.touchSlider.js"></script>
+<script src="../../../js/site/kor/jquery.scrolltabs.js"></script>
 <script src="../../../js/site/kor/common.js"></script>
 <script src="../../../js/site/kor/layout.js"></script>
 <script src="../../../js/site/kor/jquery-ui.js"></script>
@@ -270,7 +271,7 @@
                     </ul>
                 </div>
                 <div class="tit_wrap">
-                    <h3>국민추천</h3>
+                    <h3>환율</h3>
                     <ul>
                         <li class="print"><a href="#">프린트</a></li>
                         <li class="fa"><a href="#">페이스북</a></li>
@@ -280,130 +281,59 @@
                 <div class="txt">
                 <!-- 본문 시작 -->
 
-                    <!-- viewer - default -->
-                    <div class="board_view_wrap board_write_wrap">
-                        <ul>
-                            <li>
-                                <span class="cell head"><span>추천인 (성명 또는 단체명)<em class="essen">*</em></span></span>
-                                <span class="cell w_170">
-                                    <span class="input">
-                                        <input type="text">
-                                    </span>
-                                </span>
-                                <span class="cell head type02"><span>휴대전화<em class="essen">*</em></span></span>
-                                <span class="cell w_425">
-                                    <span class="select">
-                                        <select name="" id="">
-                                            <option value="">선택</option>
-                                            <option value="">선택</option>
-                                            <option value="">선택</option>
-                                        </select>
-                                    </span>
-                                    <span class="wave">-</span>
-                                    <span class="input">
-                                        <input type="text">
-                                    </span>
-                                    <span class="wave">-</span>
-                                    <span class="input">
-                                        <input type="text">
-                                    </span>
-                                </span>
-                            </li>
-                            <li>
-                                <span class="cell head"><span>피추천인 (부처)<em class="essen">*</em></span></span>
-                                <span class="cell w_170">
-                                    <span class="input">
-                                        <input type="text">
-                                    </span>
-                                </span>
-                                <span class="cell head type02"><span>성명 또는 정책명<em class="essen">*</em></span></span>
-                                <span class="cell w_425">
-                                    <span class="input">
-                                        <input type="text">
-                                    </span>
-                                </span>
-                            </li>
-                            <li class="content">
-                                <span class="cell head"><span>적극 행정 유형<em class="essen">*</em></span></span>
-                                <span class="cell">
-                                    <span class="select">
-                                        <select name="" id="">
-                                            <option value="">선택</option>
-                                            <option value="">선택</option>
-                                            <option value="">선택</option>
-                                        </select>
-                                    </span>
-                                </span>
-                            </li>
-                            <li class="content">
-                                <span class="cell head"><span>추천 제목</span></span>
-                                <span class="cell">
-                                    <span class="input">
-                                        <input type="text">
-                                    </span>
-                                </span>
-                            </li>
-                            <li class="content">
-                                <span class="cell head"><span>추천 내용</span></span>
-                                <span class="cell">
-                                    <span class="textarea">
-                                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                                    </span>
-                                </span>
-                            </li>
-                            <li class="content">
-                                <span class="cell head"><span>첨부파일</span></span>
-                                <span class="cell">
-                                    <span class="input">
-                                        <input type="text" readonly>
-                                    </span>
-                                    <button class="btn btn_file"><span>파일선택</span></button>
-                                </span>
-                            </li>
-                            <li>
-                                <div class="text_area">
-                                    <p class="tit">[유의사항]</p>
-                                    <p class="txt">피추천인의 성명 및 부처, 추천내용 등을 상세하게 기재하여 주시기 바랍니다.<br/>
-                                    필수 기재사항(*) 표시</p>
-                                    <p class="txt">추천인 : 성명(소속),휴대전화<br/>
-                                    피추천인 : 성명,부처(해당 부처 선택)<br/>
-                                    적극행정 유형 및 내용 : 해당 유형을 선택 후, 추천 제목 및 내용 서술</p>
-                                    <p class="txt txt_red">피추천인의 성명 및 추천내용 등은 해당자가 적극행정 우수 공무원으로 선정될 경우 일반인에 공개 될 수 있습니다.</p>
-
-                                </div>
-                            </li>
-                            <li>
-                                <div class="text_area">
-                                    <p class="tit">[개인정보 수집 및 이용에 대한 동의]</p>
-                                    <p class="txt">적극행정 우수 공무원 선발을 위해 수집하는 개인정보는 「개인정보보호법」 및 「정보통신망이용촉진 등에 관한 법률」에 따라 개인정보의 이용과 타인에게 제공 및 활용 시 본인의 동의를 얻어야 하는 정보입니다.</p>
-                                    <p class="txt">제1조(개인정보의 처리 목적) 적극행정 우수 공무원을 발굴·육성하기 위한 목적으로 개인정보를 수집 및 이용합니다. 수집된 개인정보는 정해진 목적 이외의 용도로는 사용되지 않으며, 수집 목적 등이 변경될 경우에는 정보주체에게 알리고 동의를 받을 예정입니다.</p>
-                                    <p class="txt">제2조(개인정보의 처리 및 보유 기간) 적극행정 우수 공무원 추천 및 선발을 위해 사용되는 개인정보의 보존기간은 5년이며, 원칙적으로 개인정보의 처리목적이 달성되면 지체없이 파기합니다.</p>
-                                    <p class="txt">제3조(처리하는 개인정보의 항목) 적극행정 우수 공무원을 추천하기 위해 추천인과 피추천인(후보자)의 필수정보 및 선택정보를 아래와 같이 수집하고 있습니다.</p>
-                                    <dl>
-                                        <dt>가. 수집항목</dt>
-                                        <dd>
-                                            <p class="depth1">- 필수항목</p>
-                                            <p class="depth2">추천인 : 성명(소속), 관계(피추천인의), 휴대전화<br/>
-                                            피추천인 : 성명, 소속, 추천제목, 추천내용<br/>
-                                            선택항목 : 이메일(추천인)</p>
-                                        </dd>
-                                    </dl>
-                                    <dl>
-                                        <dt>나. 수집방법 : 인터넷 홈페이지</dt>
-                                        <dd>
-                                            <p class="depth1">개인정보보호법 제15조에 따라서 개인정보 수집 및 이용에 따른 동의를 거부할 수 있으나, 적극행정 우수 공무원을 추천할 수 없습니다.<br/>
-                                            동의하시겠습니까?</p>
-                                        </dd>
-                                    </dl>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="btn_area">
-                            <button class="btn btn_blue"><span>등록</span></button>
+                    <!-- tab -->
+                    <div class="tab_wrap">
+                        <div>
+                            <ul class="tab_navi">
+                                <li><a href="#none">환율</a></li>
+                                <li><a href="#none">금리</a></li>
+                                <li><a href="#none">유가</a></li>
+                                <li class="on"><a href="#none">반도체</a></li>
+                                <li><a href="#none">주가</a></li>
+                            </ul>
                         </div>
-                    </div>
-                    <!-- //viewer - default -->
+                        <div class="tab_content" style="display:block;">
 
+                            <!-- contact -->
+                        <div class="tab_content">tab_content01</div>
+                        <div class="tab_content">tab_content02</div>
+                        <div class="tab_content">tab_content03</div>
+                            <div class="contact_wrap">
+                                <dl>
+                                    <dt>궁금하신 사항이<br/>있으세요?</dt>
+                                    <dd>
+                                        <span class="member_tit">담당부서</span>
+                                        <span class="member_info">수출입과</span>
+                                        <span class="member_tit">담당자</span>
+                                        <span class="member_info">민지해</span>
+                                        <span class="member_tit">연락처</span>
+                                        <span class="member_info">044-203-4047</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <!-- //contact -->
+                            <span class="txt_noti">*매일 오후에 전일 경제지표가 등록됩니다.(휴일제외)</span>
+                            <!-- sorting - single -->
+                            <div class="sorting_wrap center">
+                                <dl>
+                                    <dt>날짜선택</dt>
+                                    <dd class="search_area">
+                                        <div class="cal_area">
+                                            <span class="input_cal">
+                                                <input type="text" class="datepicker">
+                                            </span>
+                                        </div>
+                                        <button class="btn btn_search btn_blue"><span>검색</span></button>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <!-- //sorting - single -->
+
+                        </div>
+                        <div class="tab_content">tab_content05</div>
+                    </div>
+                    <!-- //tab -->
+                    
                 <!-- 본문 끝 -->
                 </div>
             </div>
