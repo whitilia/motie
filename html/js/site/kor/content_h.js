@@ -29,6 +29,5 @@ function scroll_tab(){
         tab_cont.eq(i).show();
         tab_btn.removeClass('on');
         $(this).addClass('on');
-        console.log(i);
     });
 }

@@ -24,7 +24,7 @@ select:hover{background-image:url(../../../images/site/kor/inc/selectbar_arrow_h
 select:focus{background-image:url(../../../images/site/kor/inc/selectbar_arrow_click.png);border: 1px solid #576170;}
 
 /* input */
-input[type="text"],
+input[type="text"]{display:inline-block;width:100%;height:40px;border: 1px solid #A6B9D6;background: #fff;padding:0 15px;line-height:40px;box-sizing:border-box;outline:none;}
 input[type="text"]:read-only,
 input[type="text"]:read-only:hover,
 input[type="text"]:read-only:focus{display:inline-block;width:100%;height:40px;border: 1px solid #A6B9D6;background: #fff;padding:0 15px;line-height:40px;box-sizing:border-box;outline:none;}
@@ -89,7 +89,7 @@ button span{vertical-align: middle;}
 .btn_navy{background: #003763;}
 .btn_black{background: #202020;}
 .btn_L{height:39px;font-size:18px;}
-.btn_file{height:24px;padding:5px;font-size:12px;background: #8792A7;border-radius: 2px;}
+.btn_file{height:24px;line-height:12px;padding:5px;font-size:12px;background: #8792A7;border-radius: 2px;}
 .btn_search{border-radius: 4px;}
 .file_download{position:relative;height:40px;background: #FFFFFF;border: 1px solid #EEEEEE;border-radius: 2px;padding:9px 70px 9px 10px;font-size: 13px;color: #555;text-align: left;}
 .file_download:hover{border: 1px solid #3898D8;color:#222;}
@@ -135,6 +135,7 @@ button span{vertical-align: middle;}
 .btn_site_text:hover{border: 1px solid #202020;}
 .btn_site_text.link{background: #FFFFFF url(../../../images/site/kor/inc/ico-link_site_text.png) right 10px center no-repeat;}
 
+/* tab */
 /******************* BASIC STYLING **********************/
 .scroll_tabs_container {position: relative;top: 0px;left: 0px;right: 0px;text-align: left;height: 40px;margin-bottom: 10px;}
 ul.scroll_tabs_container {list-style: none;}
@@ -160,7 +161,7 @@ ul.scroll_tabs_container {list-style: none;}
 .scroll_tabs_container .scroll_tab_right_button{width:30px !important;height:30px;top: auto !important;bottom:10px;background:#fff url(../../../images/site/kor/inc/arrow-right-nomal.png) center center no-repeat;}
 .scroll_tabs_container .scroll_tab_right_button_over{background-image:url(../../../images/site/kor/inc/arrow-right-click.png)}
 .scroll_tabs_container .scroll_tab_right_button::before {display:none;}
-.scroll_tabs_container div.scroll_tab_inner span, .scroll_tabs_container div.scroll_tab_inner li{background: none;padding: 0;margin: 1px 1px -1px 1px;}
+.scroll_tabs_container div.scroll_tab_inner span, .scroll_tabs_container div.scroll_tab_inner li{background: none;padding: 0;margin: 1px 1px -7px 1px !important;font-size: 0;}
 .tab_wrap .tab_navi{border-bottom: 1px solid #536072;overflow: hidden;box-sizing: border-box;}
 .tab_wrap .tab_navi li a{display:inline-block;background: linear-gradient(180deg, #FFFFFF 91.67%, #EEEEEE 100%);border: 1px solid #CCD7EC;box-sizing: border-box;border-radius: 8px 8px 0px 0px;padding:10px;line-height: 18px;font-size: 14px;}
 .tab_wrap .tab_navi li.on a,
@@ -172,7 +173,7 @@ ul.scroll_tabs_container {list-style: none;}
 .sorting_wrap{margin-top:30px;background: #F4F7FC;border-radius: 8px;overflow: hidden;padding:10px 0;}
 .sorting_wrap dl{display:table;border-top: 1px solid #fff;}
 .sorting_wrap dl:first-of-type{border-top: none;}
-.sorting_wrap dl dt{position:relative;display:table-cell;width:170px;height:60px;padding-left: 60px;box-sizing: border-box;vertical-align: middle;font-size: 14px;}
+.sorting_wrap dl dt{position:relative;display:inline-block;width:170px;height:60px;line-height:60px;padding-left: 60px;box-sizing: border-box;vertical-align: middle;font-size: 14px;}
 .sorting_wrap dl dt:before{content:'';position:absolute;top:50%;left:40px;display:block;width:8px;height:8px;background:url(../../../images/site/kor/inc/ico_sorting_tit.png) center center no-repeat;margin-top:-4px;}
 .sorting_wrap dl dd{display:table-cell;box-sizing: border-box;vertical-align: middle;}
 .sorting_wrap .cal_area{display:inline-block;}
@@ -182,7 +183,7 @@ ul.scroll_tabs_container {list-style: none;}
 .sorting_wrap .btn_term.on{color: #fff;background:#4776EA;}
 .sorting_wrap .search_area .select{display:inline-block;width:164px;}
 .sorting_wrap .search_area .input{display:inline-block;width:300px;}
-.sorting_wrap .search_area .btn{margin-left: 10px;}
+.sorting_wrap .search_area .btn{margin-left: 10px;line-height:22px;}
 .sorting_wrap.center dl{display:block;text-align: center;}
 .sorting_wrap.center dt,
 .sorting_wrap.center dd{display:inline-block;line-height: 60px;text-align: left;}
@@ -277,7 +278,7 @@ ul.scroll_tabs_container {list-style: none;}
 
 /* paging */
 .paging_area{margin-top:30px;text-align:center;}
-.paging_area a{display:inline-block;width:40px;height:40px;line-height: 40px;background: #F4F7FC;border: 1px solid #CCD7EC;box-sizing:border-box;border-radius: 8px;font-size:12px;color: #202020;}
+.paging_area a{display:inline-block;width:40px;height:40px;line-height: 40px;background: #F4F7FC;border: 1px solid #CCD7EC;box-sizing:border-box;border-radius: 8px;font-size:12px;color: #202020;vertical-align: top;}
 .paging_area a:hover{border: 1px solid #4776EA;}
 .paging_area a.on{background: #4776EA;border: 1px solid #4776EA;color: #fff;}
 .paging_area a span{text-indent:-9999px;font-size: 0;}
@@ -360,8 +361,8 @@ ul.scroll_tabs_container {list-style: none;}
 .daily_report.board_view_wrap li .cell .report_area{display:table;width:100%;border-bottom: 1px solid #EEEEEE;padding: 2px 0;}
 .daily_report.board_view_wrap li .cell .report_area:first-of-type{padding-top: 0;}
 .daily_report.board_view_wrap li .cell .report_area:last-of-type{padding-bottom: 0;border-bottom:none}
-.daily_report.board_view_wrap li .cell .report_area .tit_area{position:relative;display:table-cell;width:130px;background: #FFFFFF;border: 1px solid #536072;box-sizing: border-box;border-radius: 2px;}
-.daily_report.board_view_wrap li .cell .report_area .tit_area span{position:absolute;top: 50%;left: 0;transform: translate(0, -50%);width:100%;height:auto;background: transparent;border: none;border-radius: 0;font-size: 13px;color: #202020;text-align: center;}
+.daily_report.board_view_wrap li .cell .report_area .tit_area{position:relative;display:table-cell;width:130px;background: #FFFFFF;border: 1px solid #536072;box-sizing: border-box;border-radius: 2px;vertical-align: middle;}
+.daily_report.board_view_wrap li .cell .report_area .tit_area span{display:block;width:100%;background: transparent;border: none;border-radius: 0;font-size: 13px;color: #202020;text-align: center;}
 .daily_report.board_view_wrap li .cell .report_area .cont_area{display:table-cell;padding: 10px 15px;}
 .daily_report.board_view_wrap li .cell .report_txt{display:block;color: #202020;line-height: 22px;}
 .daily_report.board_view_wrap li .cell .report_txt:before{content:'·';display:inline-block;margin-right: 5px;}
