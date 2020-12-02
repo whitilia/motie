@@ -165,7 +165,9 @@ ul.scroll_tabs_container {list-style: none;}
 .tab_wrap .tab_navi li.on a,
 .scroll_tabs_container div.scroll_tab_inner li.tab_selected a,
 .scroll_tabs_container div.scroll_tab_inner li.scroll_tab_over a{color:#202020;border-color: #202020;}
-.tab_wrap .tab_content{display:none;padding-top: 20px;}
+.tab_wrap .tab_content{padding-top: 20px;}
+.tab_wrap .tab_content .contact_wrap{margin-top: 0;}
+.tab_wrap .tab_content .txt_noti{margin-top: 10px;}
 
 /* sorting_wrap */
 .sorting_wrap{margin-top:30px;background: #F4F7FC;border-radius: 8px;overflow: hidden;padding:10px 0;}
@@ -371,11 +373,26 @@ ul.scroll_tabs_container {list-style: none;}
 .daily_report.board_view_wrap li .cell .report_area .cont_area .report_stock .stock.down{background:url(../../../images/site/kor/inc_h/img_stock_down.png) center center no-repeat;}
 .daily_report.board_view_wrap li .cell .report_area .cont_area .report_stock .price{display:block;font-size:13px;line-height:20px;color: #202020;text-align: center;margin-top: 10px;}
 
-.tab_wrap .tab_content .contact_wrap{margin-top: 0;}
-.tab_wrap .tab_content .txt_noti{margin-top: 10px;}
 
 
 
 
+
+.policy_wrap .policy_sorting_area{display:table;width:100%;background: #FFFFFF;border: 1px solid #EEEEEE;box-sizing: border-box;border-radius: 8px;padding: 27px;margin-top: 30px;}
+.policy_wrap .policy_sorting_area .policy_img{display:table-cell;width: 112px;box-sizing: border-box;vertical-align: top;}
+.policy_wrap .policy_sorting_area .policy_img img{display:inline-block;width: 100%;}
+.policy_wrap .policy_sorting_area .policy_info{display:table-cell;vertical-align: top;padding-left: 20px;}
+.policy_wrap .policy_sorting_area .policy_info li{display:inline-block;}
+.policy_wrap .policy_sorting_area .policy_info li a{display:inline-block;font-size: 15px;color: #000;padding-left: 22px;line-height:40px;background:url(../../../images/site/kor/inc_h/ico_policy_circle01_off.png) left center no-repeat;margin-left: 10px;}
+.policy_wrap .policy_sorting_area .policy_info li.on a{font-weight: 700;background-image: url(../../../images/site/kor/inc_h/ico_policy_circle01_on.png);color: #2D56BD;}
+.policy_tit_area{position:relative;padding: 15px 40px;background: #2D56BD;margin-top: 20px;}
+.policy_tit_area:before{content:'';position:absolute;bottom:-16px;left:40px;display:inline-block;width: 0;height: 0;border-left: 10px solid transparent;border-right: 10px solid transparent;border-top: 16px solid #2D56BD;}
+.policy_tit_area p{font-size: 22px;font-weight: 700;color: #fff;line-height: 33px;padding-left: 28px;background:url(../../../images/site/kor/inc_h/ico_policy_circle02.png) left center no-repeat;}
+
+
+
+
+/*ㅅㅏㅁ각형*/
+#triangle-down {width: 0;height: 0;border-left: 50px solid transparent;border-right: 50px solid transparent;border-top: 100px solid red;}
 
 

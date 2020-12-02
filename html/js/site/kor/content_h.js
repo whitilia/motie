@@ -20,8 +20,8 @@ function scroll_tab(){
     var tab_btn = $('.tab_wrap .tab_navi li');
     var tab_cont = $('.tab_wrap .tab_content');
 
-    //tab_cont.hide();
-    //tab_cont.eq(0).show();
+    tab_cont.hide();
+    tab_cont.eq(0).show();
 
     tab_btn.on('click', function(){
         var i=$(this).index() - 1;
