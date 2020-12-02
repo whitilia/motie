@@ -4,8 +4,7 @@ $(window).load(function(){
 
 $(window).ready(function(){
     $("#opbox .op_open").on("click",function(){
-        $("#opbox").addClass("on");
-        $("#opbox .sliderBox li:first-child a").focus();
+		$("#opbox").addClass("on");
     });
     $("#opbox .op_close").on("click",function(){
         $("#opbox").removeClass("on");

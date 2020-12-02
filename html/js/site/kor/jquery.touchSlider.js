@@ -72,6 +72,9 @@
 			$.fn.extend(this, touchSlider);
 			this.opts = opts;
 			this.init();
+			$("#opbox .op_open").on("click",function(){
+				_this.resize(_this);
+			});
 			
 			$(window).on("orientationchange resize", function () {
 				_this.resize(_this);

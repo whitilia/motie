@@ -6,23 +6,27 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no, target-densitydpi=device-dpi" />
 <meta name="format-detection" content="telephone=no,email=no,address=no" />
 <title>산업통상자원부 홈페이지</title>
-<link rel="stylesheet" href="../../../css/site/core/core.css" media="all" />
-<link rel="stylesheet" href="../../../css/site/kor/layout.css" media="all" />
-<link rel="stylesheet" href="../../../css/site/kor/content.css" media="all" />
+<link rel="stylesheet" href="../../../css/site/core/core.css" />
+<link rel="stylesheet" href="../../../css/site/kor/layout.css" />
+<link rel="stylesheet" href="../../../css/site/kor/template.css" />
+<link rel="stylesheet" href="../../../css/site/kor/develop.css" />
+<link rel="stylesheet" href="../../../css/site/kor/content.css" />
 <script src="../../../js/core/jquery-1.11.2.min.js"></script>
 <script src="../../../js/site/kor/jquery.touchSlider.js"></script>
-<script src="../../../js/site/kor/jquery.scrolltabs.js"></script>
 <script src="../../../js/site/kor/common.js"></script>
 <script src="../../../js/site/kor/layout.js"></script>
+<!-- 추가 -->
+<script src="../../../js/site/kor/jquery.scrolltabs.js"></script>
 <script src="../../../js/site/kor/jquery-ui.js"></script>
 <script src="../../../js/site/kor/content_h.js"></script>
+<script src="../../../js/site/kor/content_y.js"></script>
+<!-- //추가 -->
 </head>
 <body>
     <!-- top_layout 시작 -->
     <div id="top_layout">
         <!-- top_wrap 시작 -->
         <header class="top_wrap">
-            <h1 class="logo"><a href="#">산업통상자원부</a></h1>
             <ul class="util">
                 <li class="sns in"><a href="#">인스타</a></li>
                 <li class="sns fa"><a href="#">페이스북</a></li>
@@ -32,7 +36,7 @@
                 <li class="btn sitemap"><a href="#">사이트맵</a></li>
                 <li class="btn en"><a href="#">글로벌</a></li>
                 <li id="opbox" class="pop">
-                    <a class="op_open" href="#">팝업보기</a>
+                    <a claloss="op_open" href="#">팝업보기</a>
                     <div id="op_slide" class="op_wrap">
                         <!-- 슬라이더 컨텐츠 시작 -->
                         <div class="sliderBox">
@@ -56,8 +60,10 @@
                         <!-- 슬라이더 컨트럴 끝 -->
                         <p class="op_btn">
                             <a class="op_close" href="#">팝업닫기</a>
-                            <input id="todayClose" class="op_check" type="checkbox">
-                            <label class="op_today" for="todayClose">오늘하루 열지않기</label>
+                            <span class="today">
+                                <input id="todayClose" class="op_check" type="checkbox">
+                                <label class="op_today" for="todayClose">오늘하루 열지않기</label>
+                            </span>
                         </p>
                     </div>
                 </li>
@@ -67,8 +73,9 @@
                 <li class="n2"><a href="#">국민의 나라 정의로운 대한민국</a></li> 
                 <li class="n3"><a href="#">보다 나은 정부</a></li> 
             </ul>
-            <p class="mo">
-                <a class="menu" href="#">메뉴열기</a>
+            <h1 class="logo"><a href="#">산업통상자원부</a></h1>
+            <p class="mo top_menu">
+                <a id="btnAllmenu" class="menu" href="#">메뉴열기</a>
                 <a class="en" href="#">글로벌</a>
             </p>
             <div class="search">
@@ -217,7 +224,7 @@
     </div>
     <!-- top_layout 끝 -->
     <!-- body_layout 시작 -->
-    <div id="body_layout" class="a_type">
+    <div id="body_layout" class="a_type sub">
         <div class="body_wrap">
             <!-- 서브메뉴 시작 -->
             <aside id="lnb_layout" class="lnb_wrap">
@@ -271,7 +278,7 @@
                     </ul>
                 </div>
                 <div class="tit_wrap">
-                    <h3>산업통상자원백서</h3>
+                    <h3>보도/해명</h3>
                     <ul>
                         <li class="print"><a href="#">프린트</a></li>
                         <li class="fa"><a href="#">페이스북</a></li>
@@ -286,157 +293,157 @@
                         <div class="book_lower">
                             <ul>
                                 <li>
-                                    <div class="book_img"><img src="../../../images/site/kor/inc/img_book.png" alt=""></div>
+                                    <div class="book_img"><img src="../../../images/site/kor/inc_h/img_book.png" alt=""></div>
                                     <div class="book_info">
                                         <span class="tit">2017-2018년도 산업통상자원백서</span>
                                         <span class="txt">산업통상자원부</span>
                                         <div class="btn_area">
-                                            <button class="file_download on"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download on"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="book_img"><img src="../../../images/site/kor/inc/img_book.png" alt=""></div>
+                                    <div class="book_img"><img src="../../../images/site/kor/inc_h/img_book.png" alt=""></div>
                                     <div class="book_info">
                                         <span class="tit">2017-2018년도 산업통상자원백서</span>
                                         <span class="txt">산업통상자원부</span>
                                         <div class="btn_area">
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="book_img"><img src="../../../images/site/kor/inc/img_book.png" alt=""></div>
+                                    <div class="book_img"><img src="../../../images/site/kor/inc_h/img_book.png" alt=""></div>
                                     <div class="book_info">
                                         <span class="tit">2017-2018년도 산업통상자원백서</span>
                                         <span class="txt">산업통상자원부</span>
                                         <div class="btn_area">
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="book_img"><img src="../../../images/site/kor/inc/img_book.png" alt=""></div>
+                                    <div class="book_img"><img src="../../../images/site/kor/inc_h/img_book.png" alt=""></div>
                                     <div class="book_info">
                                         <span class="tit">2017-2018년도 산업통상자원백서</span>
                                         <span class="txt">산업통상자원부</span>
                                         <div class="btn_area">
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="book_img"><img src="../../../images/site/kor/inc/img_book.png" alt=""></div>
+                                    <div class="book_img"><img src="../../../images/site/kor/inc_h/img_book.png" alt=""></div>
                                     <div class="book_info">
                                         <span class="tit">2017-2018년도 산업통상자원백서</span>
                                         <span class="txt">산업통상자원부</span>
                                         <div class="btn_area">
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="book_img"><img src="../../../images/site/kor/inc/img_book.png" alt=""></div>
+                                    <div class="book_img"><img src="../../../images/site/kor/inc_h/img_book.png" alt=""></div>
                                     <div class="book_info">
                                         <span class="tit">2017-2018년도 산업통상자원백서</span>
                                         <span class="txt">산업통상자원부</span>
                                         <div class="btn_area">
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="book_img"><img src="../../../images/site/kor/inc/img_book.png" alt=""></div>
+                                    <div class="book_img"><img src="../../../images/site/kor/inc_h/img_book.png" alt=""></div>
                                     <div class="book_info">
                                         <span class="tit">2017-2018년도 산업통상자원백서</span>
                                         <span class="txt">산업통상자원부</span>
                                         <div class="btn_area">
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="book_img"><img src="../../../images/site/kor/inc/img_book.png" alt=""></div>
+                                    <div class="book_img"><img src="../../../images/site/kor/inc_h/img_book.png" alt=""></div>
                                     <div class="book_info">
                                         <span class="tit">2017-2018년도 산업통상자원백서</span>
                                         <span class="txt">산업통상자원부</span>
                                         <div class="btn_area">
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="book_img"><img src="../../../images/site/kor/inc/img_book.png" alt=""></div>
+                                    <div class="book_img"><img src="../../../images/site/kor/inc_h/img_book.png" alt=""></div>
                                     <div class="book_info">
                                         <span class="tit">2017-2018년도 산업통상자원백서</span>
                                         <span class="txt">산업통상자원부</span>
                                         <div class="btn_area">
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="book_img"><img src="../../../images/site/kor/inc/img_book.png" alt=""></div>
+                                    <div class="book_img"><img src="../../../images/site/kor/inc_h/img_book.png" alt=""></div>
                                     <div class="book_info">
                                         <span class="tit">2017-2018년도 산업통상자원백서</span>
                                         <span class="txt">산업통상자원부</span>
                                         <div class="btn_area">
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="book_img"><img src="../../../images/site/kor/inc/img_book.png" alt=""></div>
+                                    <div class="book_img"><img src="../../../images/site/kor/inc_h/img_book.png" alt=""></div>
                                     <div class="book_info">
                                         <span class="tit">2017-2018년도 산업통상자원백서</span>
                                         <span class="txt">산업통상자원부</span>
                                         <div class="btn_area">
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="book_img"><img src="../../../images/site/kor/inc/img_book.png" alt=""></div>
+                                    <div class="book_img"><img src="../../../images/site/kor/inc_h/img_book.png" alt=""></div>
                                     <div class="book_info">
                                         <span class="tit">2017-2018년도 산업통상자원백서</span>
                                         <span class="txt">산업통상자원부</span>
                                         <div class="btn_area">
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="book_img"><img src="../../../images/site/kor/inc/img_book.png" alt=""></div>
+                                    <div class="book_img"><img src="../../../images/site/kor/inc_h/img_book.png" alt=""></div>
                                     <div class="book_info">
                                         <span class="tit">2017-2018년도 산업통상자원백서</span>
                                         <span class="txt">산업통상자원부</span>
                                         <div class="btn_area">
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                                            <button class="file_download"><img src="../../../images/site/kor/inc/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                            <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt=""><span>산업편 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
                                         </div>
                                     </div>
                                 </li>

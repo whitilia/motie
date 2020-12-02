@@ -1,6 +1,6 @@
 $(function(){
 	$(window).ready(function(){
-		deviceCheck(1200,1024,768);
+		deviceCheck(1280,1024,768);
 		lnbOpen();
     });
 });
@@ -258,37 +258,27 @@ function gnbOpen(_depth1,pcStart,tabletStart,mobileStart){
 		_tabletStart = _tabletStart
 		_mobileStart = _mobileStart;
 		var _winWidth = $("body").outerWidth();
-		var _korSite = $("body").attr("class").indexOf("siteName_kor");
 		var _gnb_layout = $("#gnb_layout").attr("class").indexOf("mb");
 		//console.log(">>>>>> _winWidth:"+_winWidth);
 		//console.log(">>>>>> _gnb_layout:"+_gnb_layout);
 		//console.log(">>>>>> _tabletStart:"+_tabletStart);
 		if(_gnb_layout == "-1" && _winWidth <= _tabletStart){
 			e.preventDefault();
-			$("html,body").css({"overflow":"hidden","height":$(window).height()});
-			//$("body").css({"width":$("body").width(),"position":"absolute"});
-			//$("body").animate({left:-285},300);
+			$("html").css({"overflow":"hidden"});
 			$("#gnb_layout").attr("data-gnbtype",$("#gnb_layout").attr("class"));
 			$("#gnb_layout").removeClass().addClass("mb");
 			/*
 			$("#gnb_layout.mb").height($(window).height()-$("#top_layout").height());
 			*/
-			$("#gnb_layout.mb .depth1_ul, #gnb_layout.mb .topUtile, #gnb_layout.mb .gnbClose").animate({right:0},300);
+			$("#gnb_layout.mb .gnb_wrap").animate({left:0},300);
 			//$("#gnb_layout.mb .gnbClose").animate({right:15},300);
 			$("#gnb_layout.mb .depth3_ul").parent().addClass("more");
 			$("#gnb_layout.mb .gnb_bg").removeAttr("style");
-			if(_korSite != -1){
-				$("#gnb_layout.mb .depth1_ul > li.n1 > a").click();
-			}
-			$(window).resize(function(){
-				$("#gnb_layout.mb").height($(window).height()-$("#top_layout").height());
-			});
 		}
 	});
  
  
 	$("#gnb_layout .depth1_ul > li > a").on("click",function(e){
-		var _korSite = $("body").attr("class").indexOf("siteName_kor");
 		var _gnb_layout = $("#gnb_layout").attr("class").indexOf("mb");
 		$("#gnb_layout.mb .depth1_ul > li").addClass("menu");
 		
@@ -299,9 +289,6 @@ function gnbOpen(_depth1,pcStart,tabletStart,mobileStart){
 				e.preventDefault();
 			}
 			if($(this).parent().attr("class").indexOf("down") != -1){
-				if(_korSite == -1){
-					depthUp();
-				}
 			}else{
 				depthUp();
 				$("#gnb_layout .more").removeClass("on");
@@ -313,11 +300,6 @@ function gnbOpen(_depth1,pcStart,tabletStart,mobileStart){
 					var thisliNum = $(this).parents("li").index()+1;
 					var thisliHeight = $("#gnb_layout.mb .depth1_ul > li").eq(thisliNum).height();
 					var _thisScrollTOp = (57*depth1Total)-(57*(depth1Total-thisliNum)+57);
-					if(_korSite == -1){
-						$("#gnb_layout.mb .gnb_wrap").scrollTop(_thisScrollTOp);
-					}else{
-						$("#gnb_layout.mb .gnb_wrap").scrollTop(0);
-					}
 					//클릭메뉴 최상위 이동 끝
 				});
 			}
@@ -373,11 +355,13 @@ function cKscroll(pcStart,tabletStart,mobileStart){
  
 function mbClose(){
 	var _gnb_layout = $("#gnb_layout").attr("class").indexOf("mb");
+	var _sTop = $("html").scrollTop();
+	console.log(">>> _sTop : "+_sTop);
 	//console.log(">>> _gnb_layout : "+_gnb_layout);
 	if(_gnb_layout != "-1"){
 		depthUp();
-		$("#gnb_layout.mb .topUtile, #gnb_layout.mb .depth1_ul, #gnb_layout.mb .gnbClose").animate({right:-320},300,function(){
-			$("html, body, #gnb_layout, #gnb_layout.mb .lan, #gnb_layout .depth1_ul, #gnb_layout li, #gnb_layout ul, #gnb_layout.mb .gnbClose").removeClass("mb down up menu more").removeAttr("style");
+		$("#gnb_layout.mb .gnb_wrap").animate({left:$("#gnb_layout.mb .depth1_ul").width()*-1},300,function(){
+			$("html, #gnb_layout, #gnb_layout.mb .lan, #gnb_layout .depth1_ul, #gnb_layout li, #gnb_layout ul, #gnb_layout.mb .gnbClose").removeClass("mb down up menu more").removeAttr("style");
 			$("#gnb_layout").addClass($("#gnb_layout").attr("data-gnbtype"));
 		});
 	}

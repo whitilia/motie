@@ -1,1 +1,25 @@
 @charset "utf-8";
+
+.con_wrap{ display: inline-block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; -webkit-transition: all 1s; -o-transition: all 1s;}
+.con_wrap.left{ background: url(../../../images/site/kor/main/con_left_bg.png) no-repeat right center; background-color: #C5D7F5; margin-right: 0; right: 50%;}
+.con_wrap.left.on{ margin-right: -510px;}
+.con_wrap.left.off{ margin-right: 510px;}
+.con_wrap.right{ background: url(../../../images/site/kor/main/con_right_bg.png) no-repeat left center; background-color: #DCEEFF; margin-left: 0; left: 50%;}
+.con_wrap.right.on{ margin-left: -510px;}
+.con_wrap.right.off{ margin-left: 510px;}
+.con_wrap .con_body{ width: 600px; overflow: hidden;}
+.con_wrap.on .con_body{ width: 1110px;}
+.con_wrap.left .con_body{ float: right;}
+.con_wrap.right .con_body{ float: left;}
+.con_wrap.off .con_body,
+.con_wrap .con_close,
+.con_wrap.on .con_open,
+.con_wrap.off .con_close{ display: none;}
+.con_wrap.on .con_close{ font-family:'GmarketSans'; font-weight: 500; font-size: 14px; color: #2D3C50; display: inline-block; position: absolute; top: 30px;}
+.con_wrap.on .con_close span{  text-indent: -9999px; display: inline-block;}
+.con_wrap.on.left .con_close{ right: 30px;}
+.con_wrap.on.right .con_close{ left: 30px;}
+.con_wrap.off .con_open{ width: 30px; height: 30px; font-family:'GmarketSans'; font-weight: 500; font-size: 14px; text-align: center; color: #2D3C50; line-height: 14px; display: inline-block; position: absolute; top: 30px;}
+.con_wrap.off.left .con_open{ background: url(../../../images/site/kor/main/con_off_left.png) no-repeat right 353px; padding: 0 10px 18px 5px; right: 20px;}
+.con_wrap.off.right .con_open{ background: url(../../../images/site/kor/main/con_off_right.png) no-repeat center bottom; padding: 0 5px 18px 10px; left: 20px;}
+.con_wrap.off .con_open span{  text-indent: -9999px; display: inline-block;}
