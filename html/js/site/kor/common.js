@@ -1,5 +1,5 @@
 $(window).load(function(){
-    op_slide();
+    //op_slide();
 });
 
 $(window).ready(function(){
