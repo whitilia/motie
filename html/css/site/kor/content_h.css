@@ -439,7 +439,7 @@ ul.scroll_tabs_container {list-style: none;}
 .policy_dl_box .arrow_box div:last-of-type .arrow_area:before{background: url(../../../images/site/kor/inc_h/img_policy_arrow02.png) center center no-repeat;}
 .policy_dl_box .arrow_box div .txt_area{display:block;padding:0 0 0 10px;margin-top: 10px;}
 .policy_dl_box .arrow_box div .txt_area + .txt_area{margin-top: 5px;}
-.policy_dl_box.onlytit dd{display:none;}
+.policy_dl_box.onlytit span{display:block;height: 65px;line-height: 65px;font-size: 16px;font-weight: 700;color: #2D56BD;background: #F4F7FC;border: 1px solid #fff;box-sizing: border-box;text-align: center;}
 
 .policy_strategy_box{margin-top: 40px;}
 .policy_strategy_box ul{display: flex;gap:5px;}
