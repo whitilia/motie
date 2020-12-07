@@ -397,27 +397,18 @@
                                 <div class="swiper-pagination"></div>
                                 <div class="swiper-button-prev"></div>
                                 <div class="swiper-button-next"></div>
-
                             </div>
-                            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+                            <script src="../../../js/site/kor/swiper-bundle.min.js"></script>
                             <script>
                             var mySwiper = new Swiper('.swiper-container', {
                             // Optional parameters
                             direction: 'horizontal',
                             loop: true,
-
-                            // If we need pagination
-                            pagination: {
-                                el: '.swiper-pagination',
-                                clickable: true,
-                            },
-
-                            // Navigation arrows
-                            navigation: {
-                                nextEl: '.swiper-button-next',
-                                prevEl: '.swiper-button-prev',
-                            },
-
+                            pagination: '.swiper-pagination',
+                            nextButton: '.swiper-button-next',
+                            prevButton: '.swiper-button-prev',
+                            paginationClickable: true,
                             })
                             </script>
                         </div>
