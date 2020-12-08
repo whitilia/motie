@@ -8,7 +8,19 @@
 
 /* text */
 .txt_noti.type2{background:#FFFCE3;color:#202020;}
+.txt_star{font-size:13px;margin-top:5px;color:#666;padding-left:15px;text-indent:-8px;}
 
+.line_txt{position:relative;font-size:18px;color:#202020;text-align:center;margin-top:50px;}
+.line_txt span{position:relative;z-index:1;background:#fff;padding:0 20px;display:inline-block;}
+.line_txt:before{content:'';width:100%;height:1px;background:#eee;position:absolute;left:0;top:50%;z-index:0;}
+
+/* box */
+.line_box{border:1px solid #eee;border-radius:8px;padding:20px;}
+.line_box .ptxt{font-size:16px;color:#202020;font-weight:500;}
+
+.policy_cont_list .btn_area{padding:10px 0 0 5px;}
+
+.policy_goal_box{margin-top:20px;}
 .policy_goal_box .goal_area{border:1px solid #eee;border-radius:8px;overflow:hidden;padding:24px 30px;background:url(../../../images/site/kor/inc_y/ico_goal_arrow.png) no-repeat center;}
 .policy_goal_box .goal_area > li{float:left;width:40%;}
 .policy_goal_box .goal_area > li:first-child{width:60%;}
@@ -21,7 +33,7 @@
 .policy_goal_box .goal_area .con .lst li{color:#000;font-size:14px;}
 .policy_goal_box .btn_area{margin-top:30px;}
 
-.goal_button_box{overflow:hidden;margin-top:38px;}
+.goal_button_box{overflow:hidden;margin-top:10px;}
 .goal_button_box .box{overflow:hidden;margin:0 -10px;}
 .goal_button_box .box li{float:left;width:calc(50% - 20px);text-align:center;height:209px;border:1px solid #eee;border-radius:2px;box-sizing:border-box;margin:0 10px;}
 .goal_button_box .box li .goal_txt{margin-top:40px;font-size:20px;line-height:29px;font-weight:500;color:#000;}
@@ -70,6 +82,8 @@
 .policy_ex_banner .tit{font-size:20px;color:#fff;margin-top:25px;}
 .policy_ex_banner .txt_noti{border-radius:3px;display:inline-block;margin-top:15px;}
 
-.line_txt{position:relative;font-size:18px;color:#202020;text-align:center;margin-top:50px;}
-.line_txt span{position:relative;z-index:1;background:#fff;padding:0 20px;display:inline-block;}
-.line_txt:before{content:'';width:100%;height:1px;background:#eee;position:absolute;left:0;top:50%;z-index:0;}
+.notify_box .line_box{margin-top:10px;}
+.notify_box .line_box .policy_cont_list{margin-bottom:20px;padding:0;}
+.notify_box button{margin-right:5px;}
+
+
