@@ -16,18 +16,5 @@ function calendar(){
 }
 
 function scroll_tab(){
-    $('.tab_navi').scrollTabs();
-    var tab_btn = $('.tab_wrap .tab_navi li');
-    var tab_cont = $('.tab_wrap .tab_content');
-
-    tab_cont.hide();
-    tab_cont.eq(0).show();
-
-    tab_btn.on('click', function(){
-        var i=$(this).index() - 1;
-        tab_cont.hide();
-        tab_cont.eq(i).show();
-        tab_btn.removeClass('on');
-        $(this).addClass('on');
-    });
+    $('.js_tab ul').scrollTabs();
 }
