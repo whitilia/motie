@@ -508,7 +508,7 @@ ul.scroll_tabs_container {list-style: none;}
 .policy_step_wrap li dl{border: 1px solid #D1DBEE;box-sizing: border-box;border-radius: 20px;}
 .policy_step_wrap li dt{position:relative;height:70px;background: #E0EBFF;border-radius: 20px 20px 0 0;}
 .policy_step_wrap li dt span{position:absolute;top:50%;left:50%;transform: translate(-50%, -50%);box-sizing: border-box;font-size: 14px;font-weight: 700;line-height: 21px;text-align: center;color: #697694;}
-.policy_step_wrap li dd{box-sizing: border-box;font-size: 14px;font-weight: 400;line-height: 21px;text-align: center;color: #202020;padding: 10px; 0}
+.policy_step_wrap li dd{box-sizing: border-box;font-size: 14px;font-weight: 400;line-height: 21px;text-align: center;color: #202020;padding: 10px 0;}
 .policy_step_wrap p{text-align: center;margin-bottom: 10px;}
 .policy_step_wrap.type02{overflow: hidden;}
 .policy_step_wrap.type02 ul{float:left;width: calc(50% - 80px);margin-left: 0;}
@@ -531,7 +531,6 @@ ul.scroll_tabs_container {list-style: none;}
 .policy_term_area .imp_red {display:inline; font-size:14px; color:#f20017;}
 .policy_term_area ul {margin:5px 0;}
 .policy_term_area ul li {font-size:14px; color:#555; line-height:24px; margin-left:5px; margin-top:12px; padding-left:9px; /* background:url("../images/comm/depth3.gif") no-repeat 0 7px; */}
-.policy_term_area ul li ul {}
 .policy_term_area ul li ul li {font-size:14px; color:#555; margin-left:5px; margin-top:3px; padding-left:8px; /* background:url("../images/comm/depth4.gif") no-repeat 0 7px; */}
 
 
