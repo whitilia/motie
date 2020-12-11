@@ -75,7 +75,9 @@ textarea:focus{border: 1px solid #576170;}
 .ui-datepicker select.ui-datepicker-month{width:44%;}
 .ui-datepicker table{width:210px;margin: 10px auto 0;}
 .ui-datepicker th{padding: 1px;}
-.ui-datepicker th span{display: inline-block;width: 18px;padding: 5px;background: #FFFFFF;border-radius: 4px;border:none;text-align: center;font-size: 12px;color: #000;line-height: 18px;}
+.ui-datepicker th span{display: inline-block;width: 100%;padding: 5px;background: #FFFFFF;border-radius: 4px;border:none;text-align: center;font-size: 12px;color: #000;line-height: 18px;box-sizing: border-box;}
+.ui-datepicker th:first-of-type span{color: #CA0000;}
+.ui-datepicker th:last-of-type span{color: #205DD4;}
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{background: #FFFFFF;border-radius: 4px;border:none;line-height: 18px;}
 .ui-datepicker td span, .ui-datepicker td a{padding: 5px;text-align: center;font-size: 12px;color: #000;border: 1px solid #fff;}
 .ui-datepicker .ui-datepicker-today a{padding: 4px;color: #000;border: 1px solid #4776EA;}
@@ -83,6 +85,7 @@ textarea:focus{border: 1px solid #576170;}
 .ui-datepicker .ui-datepicker-week-end:last-of-type a{color: #205DD4;}
 
 /* button */
+.btn_area.right{text-align: right;}
 button{display:inline-block;cursor: pointer;outline:none;border:none;box-sizing:border-box;vertical-align: middle;}
 button span{display:inline-block;vertical-align: middle;}
 .btn{height:36px;border-radius: 10px;color:#fff;font-size: 16px;padding:0 16px;}
@@ -191,6 +194,7 @@ ul.scroll_tabs_container {list-style: none;}
 .sorting_wrap .btn_term{width:80px;color: #202020;background:#D5E4FF;font-size: 15px;box-shadow: 0px 1px 0px #FFFFFF;border-radius: 2px;}
 .sorting_wrap .btn_term.on{color: #fff;background:#4776EA;}
 .sorting_wrap .search_area .select{display:inline-block;width:164px;}
+.sorting_wrap .search_area .select:nth-child(2){width:100px;}
 .sorting_wrap .search_area .input{display:inline-block;width:300px;}
 .sorting_wrap .search_area .btn{margin-left: 10px;line-height:22px;}
 .sorting_wrap.center dl{text-align: center;}
@@ -202,6 +206,7 @@ ul.scroll_tabs_container {list-style: none;}
 .sorting_wrap li dl{float:left;width:45%;border-top: none;}
 .sorting_wrap li dl span{display:inline-block;width:230px}
 .sorting_wrap li .btn_area{position:absolute;top:50%;right:20px;margin-top: -18px;}
+.sorting_wrap + .btn_area{margin-top: 10px;}
 
 /* satisfaction_wrap */
 .satisfaction_wrap{margin-top:80px;background: #fff;border: 4px solid #F4F7FC;box-sizing: border-box;border-radius: 8px;padding:10px;}
@@ -305,6 +310,7 @@ ul.scroll_tabs_container {list-style: none;}
 .paging_area .btn_prev_all{background:url(../../../images/site/kor/inc_h/btn_prev_all.png) center center no-repeat;}
 .paging_area .btn_next{background:url(../../../images/site/kor/inc_h/btn_next.png) center center no-repeat;}
 .paging_area .btn_next_all{background:url(../../../images/site/kor/inc_h/btn_next_all.png) center center no-repeat;}
+.paging_area + .btn_area{margin-top: 30px;text-align: right;padding-right: 30px;}
 
 /* book_wrap */
 .book_wrap{margin-top: 30px;}
@@ -370,7 +376,6 @@ ul.scroll_tabs_container {list-style: none;}
 .board_write_wrap .text_area .depth1{font-size: 14px;font-weight: 400;line-height: 20px;color: #202020;}
 .board_write_wrap .text_area .depth2{font-size: 14px;font-weight: 400;line-height: 20px;color: #202020;margin-left: 10px;}
 
-
 .board_view_wrap .cell table{width:100%;table-layout:fixed;border-top: 2px solid #697694;}
 .board_view_wrap .cell table thead th{border-left: 1px solid #697694;border-bottom: 1px solid #697694;background: #F4F7FC;text-align: center;padding:20px;font-size: 14px;color: #3E4A64;}
 .board_view_wrap .cell table thead th:first-of-type{border-left: none;}
@@ -390,7 +395,7 @@ ul.scroll_tabs_container {list-style: none;}
 .daily_report.board_view_wrap li .cell.head{width:130px;}
 .daily_report.board_view_wrap li .cell.head:nth-child(3),
 .daily_report.board_view_wrap li .cell.head:nth-child(5){width:90px;}
-.daily_report.board_view_wrap li.content.report .cell:nth-child(2){padding-left: 135px;}
+.daily_report.board_view_wrap li.content.report .cell:nth-child(2){padding: 3px 20px 3px 135px;}
 .daily_report.board_view_wrap li.content .cell:nth-child(2){padding-left: 150px;}
 .daily_report.board_view_wrap li .cell .report_area{display:table;width:100%;border-bottom: 1px solid #EEEEEE;padding: 2px 0;}
 .daily_report.board_view_wrap li .cell .report_area:first-of-type{padding-top: 0;}
@@ -637,4 +642,43 @@ ul.scroll_tabs_container {list-style: none;}
 .api_wrap .api_info .cont{font-size: 16px;color: #202020;margin-top: 5px;line-height: 24px;}
 .api_wrap .api_info .date{position:absolute;top:0;right:0;}
 
+/* schedule_wrap */
+.schedule_datepicker .ui-datepicker{width:100%;box-sizing: border-box;box-shadow:none;}
+.schedule_datepicker .ui-datepicker .ui-datepicker-title{margin: 0 30%;}
+.schedule_datepicker .ui-datepicker table{width:60%;}
+.schedule_datepicker .ui-datepicker .ui-datepicker-prev{top:100px;left:70px;}
+.schedule_datepicker .ui-datepicker .ui-datepicker-next{top:100px;right:70px;}
+.schedule_cont{margin-top: 20px;border-top: 1px solid #536072}
+.schedule_cont li{border-bottom: 1px solid #eee;}
+.schedule_top{position:relative;padding: 15px 30px;}
+.schedule_top span{display:inline-block;padding-left: 30px;margin-right: 15px;line-height: 30px;font-size: 15px;color:#000;}
+.schedule_top .date{background:url(../../../images/site/kor/inc_h/ico_schedule_date.png) left center no-repeat;}
+.schedule_top .time{background:url(../../../images/site/kor/inc_h/ico_schedule_time.png) left center no-repeat;}
+.schedule_top .place{background:url(../../../images/site/kor/inc_h/ico_schedule_place.png) left center no-repeat;}
+.schedule_top .title{background:url(../../../images/site/kor/inc_h/ico_schedule_title.png) left center no-repeat;}
+.schedule_top .btn_more{position:absolute;top:15px;right:20px;display: block;width:30px;height:30px;background: url(../../../images/site/kor/inc_h/arrow-down-nomal.png) center center no-repeat;}
+.schedule_top .btn_more.on{background-image: url(../../../images/site/kor/inc_h/arrow-up-click.png);}
+.schedule_bottom{padding: 20px 30px;background: #F4F7FC;overflow: hidden;}
+.schedule_bottom dl{float: left;}
+.schedule_bottom dl:first-of-type{width:40%;}
+.schedule_bottom dl:last-of-type{width:60%;padding-left: 10px;box-sizing: border-box;}
+.schedule_bottom dt span{display:inline-block;background: #FFFFFF;border: 1px solid #CCCCCC;box-sizing: border-box;border-radius: 2px;padding: 3px 8px;font-size: 12px;line-height: 18px;}
+.schedule_bottom dd{margin-top: 10px;}
+.schedule_bottom dd button{display:block;margin-top: 10px;}
+
+/* group_wrap */
+.group_wrap{position:relative;}
+.group_wrap button{position:absolute;top:-10px;right:0;}
+.group_wrap img{display:inline-block;width:100%;margin-top: 40px;}
+
+/* introduce_wrap */
+.introduce_wrap{background: #FFFFFF;border: 1px solid #EEEEEE;box-sizing: border-box;border-radius: 8px;padding: 10px;}
+.introduce_wrap dt{background: #F4F7FC;color: #2D56BD;font-size: 18px;line-height: 18px;padding: 23px 30px;box-sizing: border-box;}
+.introduce_wrap dd{padding: 20px 30px;}
+.introduce_wrap li{display: block;font-size: 14px;line-height: 20px;color: #202020;margin: 10px 0 0 0;}
+.introduce_wrap li:first-of-type{margin-top: 0;}
+.introduce_wrap li:before{content: '-';display: inline-block;margin-right: 5px;}
+.introduce_wrap .txt{display: inline-block;background: #D2E4FF;border-radius: 2px;padding: 2px 5px;font-size: 16px;line-height: 28px;color: #202020;margin-top: 20px;}
+
+.notify_box .line_box .policy_cont_list.type02{margin-top: 30px;}
 

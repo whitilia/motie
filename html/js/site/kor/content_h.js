@@ -1,6 +1,7 @@
 $(function(){
     calendar();
     scroll_tab();
+    toggle();
 });
 
 
@@ -17,4 +18,19 @@ function calendar(){
 
 function scroll_tab(){
     $('.js_tab ul').scrollTabs();
+}
+
+
+function toggle(){
+    $('.schedule_bottom').hide();
+    $('.schedule_top .btn_more').on('click', function(){
+        if(!$(this).hasClass('on')){
+            $(this).addClass('on');
+            $(this).parent('.schedule_top').siblings('.schedule_bottom').stop().slideDown();
+            
+        }else{
+            $(this).removeClass('on');
+            $(this).parent('.schedule_top').siblings('.schedule_bottom').stop().slideUp();
+        }
+    });
 }
