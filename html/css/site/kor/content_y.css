@@ -315,3 +315,6 @@
 .plan_box .btn_area{position:absolute;bottom:40px;width:100%;}
 .plan_box .btn_area .btn_list{width:100%;text-align:center;overflow:initial;font-size:0;}
 .plan_box .btn_area .btn_list li{display:inline-block;margin-right:0;float:none;margin:0 5px;}
+
+.identify_wrap .identify_img.type2 {padding:0;background:none;}
+#body_layout .body_wrap .content_wrap .txt.arrowType{margin-top:10px;padding-left:20px;margin-bottom:20px;background:url(../../../images/site/kor/inc_y/bul_arrow.png) no-repeat 0 5px;}
