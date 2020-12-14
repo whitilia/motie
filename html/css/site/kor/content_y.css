@@ -20,7 +20,7 @@
 .policy_cont_area >.inner_txt + .btn_area{margin-top:20px;}
 .policy_cont_area .tit.type2{background:url(../../../images/site/kor/inc_y/ico_policy_tit01_1.png) no-repeat left center;color:#2D56BD;}
 .policy_cont_area .order_list.type2{margin-top:20px;}
-.policy_cont dd > .inner_txt{margin-top:15px;margin-left:25px;}
+.policy_cont dd > .inner_txt{margin-top:15px;margin-left:8px;}
 .policy_cont > li{font-size: 18px;font-weight:500;line-height: 26px;margin-top:8px;color: #202020;padding-left: 25px;background:url(../../../images/site/kor/inc_h/ico_policy_tit02.png) left top 4px no-repeat;}
 .policy_cont > li .policy_cont_list{padding-bottom:15px;}
 .policy_cont > li .policy_cont_list .btn_area{padding:10px 0 0 5px;}
