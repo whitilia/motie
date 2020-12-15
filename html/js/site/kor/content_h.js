@@ -2,6 +2,7 @@ $(function(){
     calendar();
     scroll_tab();
     toggle();
+    scroll_img();
 });
 
 
@@ -33,4 +34,10 @@ function toggle(){
             $(this).parent('.schedule_top').siblings('.schedule_bottom').stop().slideUp();
         }
     });
+}
+function scroll_img(){
+    var thumb_w = $('.thumb_list_cont a').width() + 13;
+    var thumb_count = $('.thumb_list_cont a').length;
+    console.log(thumb_count);
+    $('.thumb_list_cont').css('width',thumb_w * thumb_count);
 }

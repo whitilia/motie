@@ -331,3 +331,29 @@
 .board_wrap.message li .btn > a.btn_like{background:url(../../../images/site/kor/inc_y/ico_heart.png) no-repeat 0 center;}
 .board_wrap.message li .btn > a.btn_share{background:url(../../../images/site/kor/inc_y/ico_share.png) no-repeat 0 center;}
 .board_wrap.message li .btn > a.btn_reply{background:url(../../../images/site/kor/inc_y/ico_reply.png) no-repeat 0 center;}
+
+
+/* mediaquery */
+@media (max-width:1279px){
+.policy_count_box .lst li{width: calc(100% - 10px);}
+.policy_count_box .lst .img{text-align: center;}
+.policy_count_box .lst li:before{display:none;}
+}
+
+@media (max-width:1023px){
+}
+
+@media (max-width:767px){
+.policy_goal_box .goal_area .title{display: block;}
+.policy_goal_box .goal_area .con{margin-top: 10px;}
+.policy_goal_box .goal_area li:first-of-type .con{margin-right: 60px;}
+.goal_button_box .box li{width: calc(100% - 20px);margin-top: 10px;}
+.goal_button_box .box li:first-of-type{margin-top: 0;}
+.policy_example_box dd .blue_box .num{display:block;border: none;}
+.policy_example_box dd .blue_box .cont{margin-left: 0;margin-top: 10px;}
+.qna_box dt{display:block;width:100%;padding: 20px 0;}
+.qna_box dd{display:block;width:100%;padding: 20px 0;margin-top: 10px;}
+}
+
+@media (max-width:450px){
+}
