@@ -210,7 +210,7 @@ ul.scroll_tabs_container {list-style: none;}
 
 /* satisfaction_wrap */
 .satisfaction_wrap{margin-top:80px;background: #fff;border: 4px solid #F4F7FC;box-sizing: border-box;border-radius: 8px;padding:10px;}
-.satisfaction_wrap p{position:relative;line-height:52px;background: #E8F0FF;border-radius: 4px;padding-left: 60px;font-size: 18px;}
+.satisfaction_wrap p{position:relative;background: #E8F0FF;border-radius: 4px;line-height:25px;font-size: 18px;padding:14px 0 14px 60px;}
 .satisfaction_wrap p:before{content:'';position:absolute;top:50%;left: 10px;width:30px;height:30px;background:#fff url(../../../images/site/kor/inc_h/ico_Q.png) center center no-repeat;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);border-radius: 4px;margin-top:-15px;}
 .satisfaction_cont{position:relative;height: 80px;background:#fff url(../../../images/site/kor/inc_h/ico_hand.png) left bottom no-repeat;text-align: center;padding-top: 30px;box-sizing:border-box;}
 .satisfaction_cont .btn{position:absolute;top:20px;right:20px;}
@@ -494,7 +494,7 @@ ul.scroll_tabs_container {list-style: none;}
 .policy_strategy_box .policy_strategy_circle span{display:block;height:67px;font-size: 20px;font-weight: 700;color: #fff;background: #6A97F6;text-align: center;padding-top: 30px;box-sizing: border-box;}
 .policy_strategy_box .policy_strategy_circle span +span{font-size: 14px;font-weight: 400;color: #202020;background: #fff;padding-top: 12px;box-sizing: border-box;}
 .policy_strategy_box .policy_strategy_list{margin-top: 20px;}
-.policy_strategy_box .policy_strategy_list span{display:block;font-size: 14px;line-height: 36px;background: #FFFFFF;border: 1px solid #CCD7EC;box-sizing: border-box;border-radius: 4px;padding: 0 20px;margin-top: 4px;}
+.policy_strategy_box .policy_strategy_list span{display:block;font-size: 14px;line-height: 24px;background: #FFFFFF;border: 1px solid #CCD7EC;box-sizing: border-box;border-radius: 4px;padding: 5px 20px;margin-top: 4px;}
 .policy_strategy_box .policy_strategy_result{padding-top: 60px;background:url(../../../images/site/kor/inc_h/ico_policy_arrow_down.png) center top 20px no-repeat;padding: 60px 30px 0;text-align: center;}
 .policy_strategy_box .policy_strategy_result span{color: #6A97F6;}
 .policy_strategy_box .policy_strategy_square{margin-top: 30px;}
@@ -711,7 +711,9 @@ ul.scroll_tabs_container {list-style: none;}
 .sorting_wrap li dl{width:calc(100% - 70px);}
 .sorting_wrap li dl span{width:100%;}
 .sorting_wrap li .btn_area{top:auto;right:10px;bottom:12px;margin-top:0;}
-.satisfaction_cont{padding: 30px 120px 0;height: auto;text-align: left;}
+.satisfaction_cont{background-position:left center;padding:25px 0 25px 130px;font-size:0;height: auto;text-align: left;}
+.satisfaction_cont .style_rdo{margin:8px 10px 8px 0;}
+.satisfaction_cont .btn{top:23px;}
 .contact_wrap .member_tit{margin-left: 10px;}
 .policy_image_wrap{display:block;margin-left: 0;}
 .policy_image_wrap img{width:100%;margin-left:0;}
@@ -748,6 +750,7 @@ ul.scroll_tabs_container {list-style: none;}
 .sorting_wrap .search_area .btn{margin-left: 0;}
 .sorting_wrap.center .cal_area{display:block;margin-bottom: 10px;}
 .sorting_wrap.center .cal_area .input_cal{width:100%;}
+.contact_wrap .member_tit{width:70px;text-align:center;}
 .contact_wrap dd li{display:block;margin: 10px 0;}
 .thumb_content .thumb_box .video_area{width: 300px;height:200px;}
 .thumb_content .thumb_box .text_area{width: calc(100% - 300px);height:200px;}
@@ -768,7 +771,13 @@ ul.scroll_tabs_container {list-style: none;}
 .book_wrap .book_lower li{width:99%;}
 .noticeboard_wrap li{width:99%;}
 .identify_wrap .identify_img{width:100%;}
+.satisfaction_cont{background-position:left 10px;}
 .identify_wrap .identify_info .btn_area button{width:100%;}
+.satisfaction_cont .style_rdo{width:120px;margin-right:0;}
+.satisfaction_cont .btn{position:relative;top:0;left:0;margin-top:20px;display:block;}
+.policy_strategy_box ul{display:block;}
+.policy_strategy_box li{flex:none;margin-top:40px;}
+.policy_strategy_box .policy_strategy_square span{min-height:auto;}
 }
 
 @media (max-width:450px){
