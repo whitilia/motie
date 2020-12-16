@@ -763,7 +763,7 @@ ul.scroll_tabs_container {list-style: none;}
 .thumb_content .thumb_box .video_area{width: 300px;height:200px;}
 .thumb_content .thumb_box .text_area{width: calc(100% - 300px);height:200px;}
 .paging_area a{width:25px;height:25px;line-height:25px;font-size:12px;}
-.policy_step_wrap ul{display:block;margin-left: 0;margin-bottom: -30px;}
+.policy_step_wrap ul{display:block;margin-left: 0;}
 .policy_step_wrap li{margin-left: 0;margin-bottom: 30px;}
 .policy_step_wrap li:before{right:50%;margin-right: -4px;margin-top: 0;top:auto;bottom:-24px;transform: rotate(0deg);}
 .sitemap_wrap dd{min-height:200px;}
