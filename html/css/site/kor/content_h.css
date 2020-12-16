@@ -364,7 +364,7 @@ ul.scroll_tabs_container {list-style: none;}
 .board_write_wrap.board_view_wrap li .cell .input_file{padding-right: 70px;}
 .board_write_wrap.board_view_wrap li .cell .btn_file{position:absolute;top:50%;right: 13px;margin-top: -12px;}
 .board_write_wrap.board_view_wrap li.content .cell{display:block;}
-.board_write_wrap.board_view_wrap li.content .cell:nth-child(2){padding-left: 185px;}
+.board_write_wrap.board_view_wrap li.content .cell:nth-child(2){padding: 2px 5px 2px 185px;}
 .board_write_wrap.board_view_wrap li.content .cell .select, 
 .board_write_wrap.board_view_wrap li.content .cell .input{display:block;}
 .board_write_wrap.board_view_wrap li.content .cell input{vertical-align: top;}
