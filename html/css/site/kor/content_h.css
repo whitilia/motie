@@ -349,13 +349,15 @@ ul.scroll_tabs_container {list-style: none;}
 .identify_wrap .identify_info .identify_noti li:first-of-type{margin-top: 0;}
 
 /* board_write_wrap */
-.board_write_wrap.board_view_wrap li .cell{position:relative;display: table;padding: 2px 5px;}
+.board_write_wrap.board_view_wrap li .cell{position:relative;display: table;padding: 3px 5px;}
 .board_write_wrap.board_view_wrap li .cell.head{width: 180px;padding: 2px 0;text-align: left;}
 .board_write_wrap.board_view_wrap li .cell.head.type02{width: 135px;padding: 2px 0;}
 .essen{display:inline-block;color:#FF0000;margin-left: 5px;}
 .board_write_wrap.board_view_wrap li .cell .select,
 .board_write_wrap.board_view_wrap li .cell .wave,
 .board_write_wrap.board_view_wrap li .cell .input{display: table-cell;}
+.board_write_wrap.board_view_wrap li .cell .select,
+.board_write_wrap.board_view_wrap li .cell .input{font-size:0 !important;vertical-align:top;}
 .board_write_wrap.board_view_wrap li .cell.w_170{width: 170px;}
 .board_write_wrap.board_view_wrap li .cell.w_425{width: 425px;}
 .board_write_wrap.board_view_wrap li .cell.w_425 .select{width: 125px;}
@@ -364,11 +366,11 @@ ul.scroll_tabs_container {list-style: none;}
 .board_write_wrap.board_view_wrap li .cell .input_file{padding-right: 70px;}
 .board_write_wrap.board_view_wrap li .cell .btn_file{position:absolute;top:50%;right: 13px;margin-top: -12px;}
 .board_write_wrap.board_view_wrap li.content .cell{display:block;}
-.board_write_wrap.board_view_wrap li.content .cell:nth-child(2){padding: 2px 5px 2px 185px;}
+.board_write_wrap.board_view_wrap li.content .cell:nth-child(2){padding: 3px 5px 3px 185px;}
 .board_write_wrap.board_view_wrap li.content .cell .select, 
 .board_write_wrap.board_view_wrap li.content .cell .input{display:block;}
 .board_write_wrap.board_view_wrap li.content .cell input{vertical-align: top;}
-.board_write_wrap.board_view_wrap li.content .cell .textarea{display:block;height:254px;}
+.board_write_wrap.board_view_wrap li.content .cell .textarea{display:block;height:254px;font-size:0;}
 .board_write_wrap.board_view_wrap li.content .cell.head span{left: 0;transform: translate(0%, -50%);}
 .board_write_wrap .text_area{padding: 30px;background: #FFFFFF;border: 1px solid #A6B9D6;box-sizing: border-box;border-radius: 4px;margin: 2px 5px 2px 0;}
 .board_write_wrap .text_area .tit{font-size: 16px;font-weight: 700;line-height: 24px;color: #202020;}
