@@ -278,7 +278,7 @@
                     </ul>
                 </div>
                 <div class="tit_wrap">
-                    <h3>보도/해명</h3>
+                    <h3>규제입증요청</h3>
                     <ul>
                         <li class="print"><a href="#">프린트</a></li>
                         <li class="fa"><a href="#">페이스북</a></li>
@@ -288,23 +288,99 @@
                 <div class="txt">
                 <!-- 본문 시작 -->
 
-                    <div class="identify_wrap">
-                        <div class="identify_img"><img src="../../../images/site/kor/inc_h/img_id.png" alt=""></div>
-                        <div class="identify_info">
-                            <p class="tit">규제입증요청 접수방법</p>
-                            <div class="btn_area">
-                                <button class="file_download"><img src="../../../images/site/kor/inc_h/ico_file_hwp.png" alt=""><span>규제입증요청양식 다운로드</span></button><!-- 활성화시 클래스 'on' 추가 -->
-                            </div>
-                            <ul class="identify_noti">
-                                <li>'규제입증요청 양식 다운로드'를 클릭하여 파일 다운후, 양식을 작성한다.</li>
-                                <li>아래 SNS 계정으로 로그인하여 신청서 제출(제목, 핸드폰번호, E-mail, 첨부파일 등록)</li>
-                            </ul>
-                            <div class="btn_area login">
-                                <button class="ico_id_naver"><span>로그인</span></button>
-                                <button class="ico_id_kakao"><span>로그인</span></button>
-                            </div>
+                    <!-- viewer - default -->
+                    <div class="board_write_wrap">
+                        <div class="text_area">
+                            <p class="tit">개인정보 수집 및 이용</p>
+                            <p class="txt">- 수집목적 : 홈페이지 개선 의견 수렴 및 서비스 제공</p>
+                            <p class="depth1">- 수집항목 : 이름, 이메일 주소</p>
+                            <p class="depth1">- 처리 및 보유기간 : 작성 후 3년간 보관</p>
+                            <dl>
+                                <dt>본 개인정보 수집에 대한 동의를 거부할 수 있으며, 거부 시 글게시가 불가능합니다.</dt>
+                                <dd>
+                                    <span class="style_rdo">
+                                        <input type="radio" id="rdo01" name="rdo_box01" checked>
+                                        <label for="rdo01">예</label> 
+                                    </span>
+                                    <span class="style_rdo">
+                                        <input type="radio" id="rdo02" name="rdo_box01">
+                                        <label for="rdo02">아니오</label> 
+                                    </span>
+                                </dd>
+                            </dl>
                         </div>
                     </div>
+                    <!-- //viewer - default -->
+
+                    <!-- viewer - default -->
+                    <div class="board_view_wrap board_write_wrap">
+                        <ul>
+                            <li>
+                                <span class="cell head"><span>작성자<em class="essen">*</em></span></span>
+                                <span class="cell w_170">
+                                    <span class="input">
+                                        <input type="text">
+                                    </span>
+                                </span>
+                                <span class="cell head type02"><span>휴대전화<em class="essen">*</em></span></span>
+                                <span class="cell w_425">
+                                    <span class="select">
+                                        <select name="" id="">
+                                            <option value="">선택</option>
+                                            <option value="">선택</option>
+                                            <option value="">선택</option>
+                                        </select>
+                                    </span>
+                                    <span class="wave">-</span>
+                                    <span class="input">
+                                        <input type="text">
+                                    </span>
+                                    <span class="wave">-</span>
+                                    <span class="input">
+                                        <input type="text">
+                                    </span>
+                                </span>
+                            </li>
+                            <li class="content">
+                                <span class="cell head"><span>제목</span></span>
+                                <span class="cell">
+                                    <span class="input">
+                                        <input type="text">
+                                    </span>
+                                </span>
+                            </li>
+                            <li class="content">
+                                <span class="cell head"><span>E-Mail</span></span>
+                                <span class="cell">
+                                    <span class="input">
+                                        <input type="text">
+                                    </span>
+                                </span>
+                            </li>
+                            <li class="content">
+                                <span class="cell head"><span>내용</span></span>
+                                <span class="cell">
+                                    <span class="textarea">
+                                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                                    </span>
+                                </span>
+                            </li>
+                            <li class="content">
+                                <span class="cell head"><span>첨부파일</span></span>
+                                <span class="cell">
+                                    <span class="input">
+                                        <input type="text" readonly>
+                                    </span>
+                                    <button class="btn btn_file"><span>파일선택</span></button>
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="btn_area">
+                            <button class="btn btn_blue"><span>확인</span></button>
+                            <button class="btn btn_blue"><span>취소</span></button>
+                        </div>
+                    </div>
+                    <!-- //viewer - default -->
 
                     <!-- satisfaction -->
                     <div class="satisfaction_wrap">
@@ -358,7 +434,7 @@
                         </dl>
                     </div>
                     <!-- //contact -->
-                    
+
                 <!-- 본문 끝 -->
                 </div>
             </div>
