@@ -49,6 +49,7 @@
 /* box */
 .line_box{border:1px solid #eee;border-radius:8px;padding:20px;}
 .line_box .ptxt{font-size:16px;color:#202020;font-weight:500;}
+.line_box .ptxt + .ptxt{margin-top: 10px;}
 /* list */
 .line_list{margin-top:15px;}
 .line_list li{position:relative;padding-left:12px;font-size:14px;margin-top:5px;}
@@ -311,7 +312,7 @@
 
 .plan_box{position:relative;background:#E5EEFE url(../../../images/site/kor/inc_y/bg_plan.png) no-repeat bottom center;height:394px;}
 .plan_box + .js_tab{margin-top:50px;}
-.plan_box .title{position:absolute;top:40px;width:100%;font-size:30px;color:#2D56BD;display:block;text-align:center;}
+.plan_box .title{position:absolute;top:40px;width:100%;font-size:30px;color:#2D56BD;display:block;text-align:center;line-height: 35px;}
 .plan_box .btn_area{position:absolute;bottom:40px;width:100%;}
 .plan_box .btn_area .btn_list{width:100%;text-align:center;overflow:initial;font-size:0;}
 .plan_box .btn_area .btn_list li{display:inline-block;margin-right:0;float:none;margin:5px 5px 0;}
@@ -435,6 +436,7 @@
 .mi_color_box li:first-of-type{margin: 0;}
 .mi_logo_list .box:nth-of-type(1){display: block;margin-bottom: 10px;}
 .video_wrap .txt_area{width: 100%;padding: 0;margin-top: 10px;}
+.plan_box .title{top:20px;}
 }
 
 @media (max-width:450px){

@@ -733,7 +733,8 @@ ul.scroll_tabs_container {list-style: none;}
 .board_wrap .mobile{display:table-cell;}
 .board_wrap tr .mobile:first-of-type{width:100px;}
 .board_wrap .mobile.last{width:100px;}
-.board_wrap .mobile.w_a{width:auto;}
+.board_wrap .mobile.w_a{width:auto !important;}
+.board_wrap .mobile.w_200{width:200px !important;}
 .board_wrap.thumb li{width:49%;}
 .board_view_wrap li .cell,
 .board_view_wrap li.col .cell{width:calc(100% - 80px);border-bottom: 1px solid #eee;}
