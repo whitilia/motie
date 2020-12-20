@@ -370,6 +370,7 @@
 .group_box .list dl dt{padding:9px 0;text-align:center;color:#202020;background:#F6F6F6;}
 .group_box .list dl dd{padding:10px 20px;}
 .group_box .list ul > li{position:relative;padding-left:10px;text-align:left;margin-top:5px;}
+.group_box .list ul > li:first-child{margin-top:0;}
 .group_box .list ul > li:before{content:'·';position:absolute;left:0;top:0;}
 .group_box .group_top{position:relative;height:453px;}
 .group_box .group_top .gt_m{text-align:center;}
@@ -491,8 +492,8 @@
 .group_box .group_top .gt_m:before,
 .group_box .group_top .gt_m:after,
 .group_box .group_bottom .top:after,
-.group_box .group_bottom .gb_l .top .box5:before,
-.group_box .group_bottom .gb_l .top .box5:after{display:none;}
+.group_box .group_bottom .gb_l .top .box6:after,
+.group_box .group_bottom .gb_r .top .box6:after{display:none;}
 .group_box .group_top{height:auto;}
 .group_box .group_top .gt_l{position:relative;left:auto;top:auto;margin:30px 0 0;}
 .group_box .group_top .gt_l .box2{width:100%;}
