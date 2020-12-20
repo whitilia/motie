@@ -673,11 +673,6 @@ ul.scroll_tabs_container {list-style: none;}
 .schedule_bottom dd{margin-top: 10px;}
 .schedule_bottom dd button{display:block;margin-top: 10px;}
 
-/* group_wrap */
-.group_wrap{position:relative;}
-.group_wrap button{position:absolute;top:-10px;right:0;}
-.group_wrap img{display:inline-block;width:100%;margin-top: 40px;}
-
 /* introduce_wrap */
 .introduce_wrap{background: #FFFFFF;border: 1px solid #EEEEEE;box-sizing: border-box;border-radius: 8px;padding: 10px;}
 .introduce_wrap dt{background: #F4F7FC;color: #2D56BD;font-size: 18px;line-height: 18px;padding: 23px 30px;box-sizing: border-box;}
