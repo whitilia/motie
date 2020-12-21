@@ -8,6 +8,9 @@
 body, h1, h2, h3, h4, h5, h6, th, td, input, select, textarea{ font-family: 'Noto Sans KR'; font-weight: 400; font-size: 14px;}
 a:hover, a:focus{ text-decoration: none;}
 
+.fr{ float: right !important;}
+
+table{ table-layout:fixed; border-collapse:separate; border-spacing:0px;}
 
 .sliderBox,
 .sliderBox ul,
@@ -36,8 +39,8 @@ a:hover, a:focus{ text-decoration: none;}
 .sliderBox ul li{ position:absolute; top:0; left:0;}
 /* TouchSlider 기본 끝 */
 
-#op_layout{ display: inline-block; position: fixed; top: 0; right: 0; z-index: 999999;}
-#op_layout .op_open{ background-color: #3A85E4; font-size: 12px; color: #fff; line-height: 20px; padding: 0 15px; display: inline-block; vertical-align: top;}
+#op_layout{ display: inline-block; position: absolute; top: 0; right: 0; z-index: 999999;}
+#op_layout .op_open{ background-color: #3A85E4; font-size: 12px; color: #fff; line-height: 20px; padding: 0 15px; display: inline-block; vertical-align: top; box-sizing: border-box;}
 #op_layout .slide_wrap{ display: none;}
 #op_layout.on .op_open{ display: none;}
 #op_layout.on .slide_wrap{ width: 310px; background-color: #23354E; display: inline-block;}
@@ -258,7 +261,7 @@ a:hover, a:focus{ text-decoration: none;}
 #body_layout .body_wrap .tit_wrap ul li.fa a{ background-image: url(../../../images/site/eng/inc/con_btn_fa.png);}
 #body_layout .body_wrap .tit_wrap + .txt{ text-align: left; margin-top: 30px;}
 
-#body_layout.sub{ padding-top: 38px   ; border-top: 1px solid #CCD8EC;}
+#body_layout.sub{ padding-top: 38px; padding-bottom: 100px; border-top: 1px solid #CCD8EC;}
 #body_layout.sub::before{ width: 100%; height: 8px; background-color: #F4F7FC; content: ""; position: absolute; top: 0; left: 0;}
 
 

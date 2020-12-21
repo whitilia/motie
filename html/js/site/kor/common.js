@@ -1,5 +1,5 @@
 $(window).load(function(){
-    //op_slide();
+    op_slide();
 });
 
 $(window).ready(function(){
@@ -62,8 +62,8 @@ function touchSlider(id,num,autoplay,slide,speed){
 				var paging = $touchSlider.find(".paging");
 				
 				this._btn_play = null;
-				this._btn_stop = null;	
- 
+				this._btn_stop = null;
+				
 				paging.html("");
 				$this.find(" > ul > li").each(function (i, el) {
 					var num = (i+1) / _this._view;

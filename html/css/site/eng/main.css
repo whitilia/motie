@@ -3,7 +3,6 @@
 .imgW{ width: 100% !important; height: auto !important; display: inline-block; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%);}
 .imgH{ width: auto !important; height: 100% !important; display: inline-block; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%);}
 
-table{ table-layout:fixed; border-collapse:separate; border-spacing:0px;}
 
 .body_wrap{ width: 1200px; margin-top: 40px;}
 .body_wrap .btn_more{ width: 21px; height: 21px; background: url(../../../images/site/eng/main/btn_more.png) no-repeat center center; text-indent: -9999px; position: absolute; top: 28px; right: 0;}
