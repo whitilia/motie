@@ -273,6 +273,8 @@ ul.scroll_tabs_container {list-style: none;}
 .board_view_wrap li.content .cell.head span{position:absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);width:auto;height:auto;background: transparent;border: none;border-radius: 0;}
 .board_view_wrap li.content .cell a{display:block;line-height: 30px;color:#202020;}
 .board_view_wrap li.content .cell a img{display:inline-block;vertical-align: middle;margin-right: 8px;}
+.board_view_wrap li.content.no_head .cell.head{display:none;}
+.board_view_wrap li.content.no_head .cell:nth-child(2){padding:20px;}
 .board_view_wrap .btn_area{margin-top: 30px;text-align: right;padding-right: 30px;}
 .board_view_wrap .btn_area button{margin-left: 10px;}
 .board_view_wrap .btn_area button:first-of-type{margin-left: 0;}
