@@ -3,6 +3,22 @@ $(function(){
     scroll_tab();
     toggle();
     scroll_img();
+
+    $(window).load(function(){    
+        if($(".js_tab").length){
+            var selectNum = $(".js_tab .scroll_tab_inner").find("li.on").index();
+            var arr = [];
+            arr.push(0);
+            if(selectNum > 1){
+                for(i=2;i<=selectNum;i++){
+                    var tabW = $(".js_tab .scroll_tab_inner").find("li:nth-child("+i+")").outerWidth()+2;
+                    var arr0 = arr[i-2]
+                    arr.push(Number(tabW+arr0));
+                }
+            }
+            $(".scroll_tab_inner").scrollLeft(arr.slice(-1));
+        }
+    })
 });
 
 
