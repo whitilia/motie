@@ -289,55 +289,92 @@
                 <!-- 본문 시작 -->
 
                     <!-- tab -->
-                    <div class="tab_wrap">
-                        <ul class="tab_navi">
-                            <li><a href="#none">환율</a></li>
-                            <li><a href="#none">금리</a></li>
-                            <li><a href="#none">유가</a></li>
-                            <li class="on"><a href="#none">반도체</a></li>
-                            <li><a href="#none">주가</a></li>
+                    <div class="js_tab">
+                        <ul>
+                            <li><a href="#none"><span>환율</span></a></li><!-- 활성화시 'on' 클래스 추가 -->
+                            <li><a href="#none"><span>금리</span></a></li>
+                            <li><a href="#none"><span>유가</span></a></li>
+                            <li class="on"><a href="#none"><span>반도체</span></a></li>
+                            <li><a href="#none"><span>주가</span></a></li>
                         </ul>
-                        <div class="tab_content">tab_content01</div>
-                        <div class="tab_content">tab_content02</div>
-                        <div class="tab_content">tab_content03</div>
-                        <div class="tab_content">
-
-                            <!-- contact -->
-                            <div class="contact_wrap">
-                                <dl>
-                                    <dt>궁금하신 사항이 있으세요?</dt>
-                                    <dd>
-                                        <span class="member_tit">담당부서</span>
-                                        <span class="member_info">수출입과</span>
-                                        <span class="member_tit">담당자</span>
-                                        <span class="member_info">민지해</span>
-                                        <span class="member_tit">연락처</span>
-                                        <span class="member_info">044-203-4047</span>
-                                    </dd>
-                                </dl>
-                            </div>
-                            <!-- //contact -->
-                            <span class="txt_noti">*매일 오후에 전일 경제지표가 등록됩니다.(휴일제외)</span>
-                            <!-- sorting - single -->
-                            <div class="sorting_wrap center">
-                                <dl>
-                                    <dt>날짜선택</dt>
-                                    <dd class="search_area">
-                                        <div class="cal_area">
-                                            <span class="input_cal">
-                                                <input type="text" class="datepicker">
-                                            </span>
-                                        </div>
-                                        <button class="btn btn_search btn_blue"><span>검색</span></button>
-                                    </dd>
-                                </dl>
-                            </div>
-                            <!-- //sorting - single -->
-
-                        </div>
-                        <div class="tab_content">tab_content05</div>
                     </div>
                     <!-- //tab -->
+                    
+                    <!-- contact -->
+                    <div class="contact_wrap">
+                        <dl>
+                            <dt>궁금하신 사항이 있으세요?</dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        <span class="member_tit">담당부서</span>
+                                        <span class="member_info">수출입과</span>
+                                    </li>
+                                    <li>
+                                        <span class="member_tit">담당자</span>
+                                        <span class="member_info">민지해</span>
+                                    </li>
+                                    <li>
+                                        <span class="member_tit">연락처</span>
+                                        <span class="member_info">044-203-4047</span>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <!-- //contact -->
+                    <span class="txt_noti">*매일 오후에 전일 경제지표가 등록됩니다.(휴일제외)</span>
+                    <!-- sorting - single -->
+                    <div class="sorting_wrap center">
+                        <dl>
+                            <dt>날짜선택</dt>
+                            <dd class="search_area">
+                                <div class="cal_area">
+                                    <span class="input_cal">
+                                        <input type="text" class="datepicker">
+                                    </span>
+                                </div>
+                                <button class="btn btn_search btn_blue"><span>검색</span></button>
+                            </dd>
+                        </dl>
+                    </div>
+                    <!-- //sorting - single -->
+                    <p class="txt_star">※ 반도체 주력상품의 변경으로 2009.11.01부터 8G플래시에서 16G플래시 가격동향으로 변경</p>
+                    <p class="txt_star">※ 반도체 주력상품의 변경으로 2011.09.01부터 16G플래시에서 32G플래시 가격동향으로 변경</p>
+                    <p class="txt_star">※ 반도체 주력상품 변경으로 ‘13.1월부터 DDR3 2G, '17.11월부터 DDR4 4G, '19.5월부터 DDR4 8G 기준으로 작성</p>
+
+                    <!-- 그래프 영역 -->
+                    <div class="div_graph">그래프 영역</div>
+                    <!-- //그래프 영역 -->
+                    
+                    <!-- satisfaction -->
+                    <div class="satisfaction_wrap">
+                        <p class="satisfaction_tit">이 페이지에서 제공하는 정보에 만족하셨습니까?</p>
+                        <div class="satisfaction_cont">
+                            <span class="style_rdo">
+                                <input type="radio" id="satisfaction_rdo_01" name="satisfaction_rdo_box01" checked>
+                                <label for="satisfaction_rdo_01">매우만족</label> 
+                            </span>
+                            <span class="style_rdo">
+                                <input type="radio" id="satisfaction_rdo_02" name="satisfaction_rdo_box01">
+                                <label for="satisfaction_rdo_02">만족</label> 
+                            </span>
+                            <span class="style_rdo">
+                                <input type="radio" id="satisfaction_rdo_03" name="satisfaction_rdo_box0">
+                                <label for="satisfaction_rdo_03">보통</label> 
+                            </span>
+                            <span class="style_rdo">
+                                <input type="radio" id="satisfaction_rdo_04" name="satisfaction_rdo_box01">
+                                <label for="satisfaction_rdo_04">불만족</label> 
+                            </span>
+                            <span class="style_rdo">
+                                <input type="radio" id="satisfaction_rdo_05" name="satisfaction_rdo_box01">
+                                <label for="satisfaction_rdo_05">매우불만족</label> 
+                            </span>
+                            <button class="btn btn_L btn_blue"><span>확인</span></button>
+                        </div>
+                    </div>
+                    <!-- //satisfaction -->
                     
                 <!-- 본문 끝 -->
                 </div>

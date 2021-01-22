@@ -259,9 +259,9 @@ function gnbOpen(_depth1,pcStart,tabletStart,mobileStart){
 		_mobileStart = _mobileStart;
 		var _winWidth = $("body").outerWidth();
 		var _gnb_layout = $("#gnb_layout").attr("class").indexOf("mb");
-		//console.log(">>>>>> _winWidth:"+_winWidth);
+		console.log(">>>>>> _winWidth:"+_winWidth);
 		//console.log(">>>>>> _gnb_layout:"+_gnb_layout);
-		//console.log(">>>>>> _tabletStart:"+_tabletStart);
+		console.log(">>>>>> _tabletStart:"+_tabletStart);
 		if(_gnb_layout == "-1" && _winWidth <= _tabletStart){
 			e.preventDefault();
 			$("html").css({"overflow":"hidden"});
@@ -332,13 +332,17 @@ function gnbOpen(_depth1,pcStart,tabletStart,mobileStart){
 function cKscroll(pcStart,tabletStart,mobileStart){
 	var thisHeight = $(window).height();
 	var documentHeight = $(document).height();
+	var innerWidth1 = window.innerWidth;
+	var innerWidth2 = $(window).innerWidth();
 	//console.log(">>> thisHeight : "+thisHeight);
 	//console.log(">>> documentHeight : "+documentHeight);
 	//console.log(">>> pcStart : "+pcStart);
 	//console.log(">>> tabletStart : "+tabletStart);
 	//console.log(">>> mobileStart : "+mobileStart);
+	//console.log(">>> innerWidth1 : "+innerWidth1);
+	//console.log(">>> innerWidth2 : "+innerWidth2);
 	
-	if(thisHeight == documentHeight){
+	if(innerWidth1 == innerWidth2){
 		var thisScroll = "noScroll";
 		var _pcStart = pcStart
 		_tabletStart = tabletStart

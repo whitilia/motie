@@ -1,6 +1,24 @@
 $(function(){
     calendar();
     scroll_tab();
+    toggle();
+    scroll_img();
+
+    $(window).load(function(){    
+        if($(".js_tab").length){
+            var selectNum = $(".js_tab .scroll_tab_inner").find("li.on").index();
+            var arr = [];
+            arr.push(0);
+            if(selectNum > 1){
+                for(i=2;i<=selectNum;i++){
+                    var tabW = $(".js_tab .scroll_tab_inner").find("li:nth-child("+i+")").outerWidth()+2;
+                    var arr0 = arr[i-2]
+                    arr.push(Number(tabW+arr0));
+                }
+            }
+            $(".scroll_tab_inner").scrollLeft(arr.slice(-1));
+        }
+    })
 });
 
 
@@ -16,18 +34,26 @@ function calendar(){
 }
 
 function scroll_tab(){
-    $('.tab_navi').scrollTabs();
-    var tab_btn = $('.tab_wrap .tab_navi li');
-    var tab_cont = $('.tab_wrap .tab_content');
+    $('.js_tab ul').scrollTabs();
+}
 
-    tab_cont.hide();
-    tab_cont.eq(0).show();
 
-    tab_btn.on('click', function(){
-        var i=$(this).index() - 1;
-        tab_cont.hide();
-        tab_cont.eq(i).show();
-        tab_btn.removeClass('on');
-        $(this).addClass('on');
+function toggle(){
+    $('.schedule_bottom').hide();
+    $('.schedule_top .btn_more').on('click', function(){
+        if(!$(this).hasClass('on')){
+            $(this).addClass('on');
+            $(this).parent('.schedule_top').siblings('.schedule_bottom').stop().slideDown();
+            
+        }else{
+            $(this).removeClass('on');
+            $(this).parent('.schedule_top').siblings('.schedule_bottom').stop().slideUp();
+        }
     });
+}
+function scroll_img(){
+    var thumb_w = $('.thumb_list_cont a').width() + 13;
+    var thumb_count = $('.thumb_list_cont a').length;
+    console.log(thumb_count);
+    $('.thumb_list_cont').css('width',thumb_w * thumb_count);
 }

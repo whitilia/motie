@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no, target-densitydpi=device-dpi" />
+<meta name="format-detection" content="telephone=no,email=no,address=no" />
+<title>산업통상자원부 홈페이지</title>
+<link rel="stylesheet" href="../../../css/site/core/core.css" />
+<link rel="stylesheet" href="../../../css/site/eng/layout.css" />
+<link rel="stylesheet" href="../../../css/site/eng/template_sc.css" />
+<script src="../../../js/core/jquery-1.11.2.min.js"></script>
+<script src="../../../js/site/eng/jquery.touchSlider.js"></script>
+<script src="../../../js/site/eng/jquery-ui.custom.js"></script>
+<script src="../../../js/site/eng/stateScrollObj.js"></script>
+<script src="../../../js/site/eng/common.js"></script>
+<script src="../../../js/site/eng/layout.js"></script>
+<script src="../../../js/site/eng/sub.js"></script>
+</head>
+<body>
+    <!-- 스킵네비 시작 -->
+    <div id="skipnavi">
+        <a href="#txt">본문 바로가기</a>
+    	<a href="#gnb_layout">주메뉴 바로가기</a>
+    </div>
+    <!-- 스킵네비 끝 -->
+    <div id="op_layout">
+        <a class="op_open" href="#">Open a pop-up window</a>
+        <div id="slide_op" class="slide_wrap">
+            <div class="sliderBox">
+                <ul>
+                    <li><a href="#"><img src="../../../images/site/eng/inc/op_img_1.png" /></a></li>
+                    <li><a href="#"><img src="../../../images/site/eng/inc/op_img_1.png" /></a></li>
+                </ul>
+            </div>
+            <div class="controlBox">
+                <div class="control">
+                    <button type="button" class="btn_stop" style="display: block;"><span>STOP</span></button>
+                    <button type="button" class="btn_play" style="display: none;"><span>PLAY</span></button>
+                    <button type="button" class="btn_prev"><span>PREV</span></button>
+                    <button type="button" class="btn_next"><span>NEXT</span></button>
+                    <div class="paging"></div>
+                </div>
+                <div class="close">
+                    <input id="opClose" type="checkbox">
+                    <a href="#">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- top_layout 시작 -->
+    <div id="top_layout">
+        <!-- top_wrap 시작 -->
+        <header class="top_wrap">
+            <h1 class="logo"><a href="#">Ministry of Trade, Industry and Energy</a></h1>
+            <div class="search">
+                <input type="text">
+                <a class="btn" href="#">search</a>
+            </div>
+            <div class="util">
+                <ul class="sns_wrap">
+                    <li class="sns fa"><a href="#">FACEBOOK</a></li>
+                    <li class="sns tw"><a href="#">TWITTER</a></li> 
+                    <li class="sns ma"><a href="#">MAIL</a></li>
+                </ul>
+                <ul class="btn_wrap">
+                    <li class="btn sitemap"><a href="#">SITEMAP</a></li>
+                    <li class="btn en"><a href="#">KOREAN</a></li>
+                </ul>
+            </div>
+            <div class="mo mo_menu">
+                <a id="btnAllmenu" class="menu" href="#">메뉴열기</a>
+            </div>
+        </header>
+        <!-- top_wrap 끝 -->
+        <!-- 공통메뉴 시작 -->
+        <nav id="gnb_layout" class="a_type"><!-- a_type는 gnb의 타입 선택 -->
+            <!-- 공통메뉴틀 시작 -->
+            <div class="gnb_wrap">
+                <!-- 메뉴 시작 -->
+                <ul class="depth1_ul n4"><!-- depth1_ul의 n6 1차메뉴 전체수 -->
+                    <li class="n1"><!-- n1은 1차메뉴 n번째 수 -->
+                        <a href="#"><span>PRESS CENTER</span></a>
+                        <ul class="depth2_ul">
+                            <li><a href="#">Photo News</a></li>
+                            <li><a href="#">Press Releases</a></li>
+                            <li><a href="#">Speeches & Articles</a></li>
+                            <li><a href="#">News In Media</a></li>
+                            <li><a href="#">Graphic News</a></li>
+                        </ul>
+                    </li>
+                    <li class="n2"><!-- n2은 1차메뉴 n번째 수 -->
+                        <a href="#"><span>TOPICS</span></a>
+                        <ul class="depth2_ul">
+                            <li><a href="#">Industry</a></li>
+                            <li><a href="#">Trade/Investment</a></li>
+                            <li><a href="#">Energy</a></li>
+                            <li><a href="#">FTA/Economic Cooperation</a></li>
+                            <li><a href="#">All Topics</a></li>
+                        </ul>
+                    </li>
+                    <li class="n3"><!-- n3은 1차메뉴 n번째 수 -->
+                        <a href="#"><span>INFORMATION</span></a>
+                        <ul class="depth2_ul">
+                            <li><a href="#">Korea's FTA Network</a></li>
+                            <li><a href="#">Forum & EXPO</a></li>
+                            <li><a href="#">Invest Korea</a></li>
+                            <li><a href="#">Trade Balance</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                        </ul>
+                    </li>
+                    <li class="n4"><!-- n4은 1차메뉴 n번째 수 -->
+                        <a href="#"><span>ABOUT MINISTRY</span></a>
+                        <ul class="depth2_ul">
+                            <li><a href="#">Introduction</a></li>
+                            <li><a href="#">Minister & Vice Ministers</a></li>
+                            <li><a href="#">Organizational Structure</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 메뉴 끝 -->
+                <!-- 공통메뉴배경 시작 -->
+                <span class="gnb_bg"></span>
+                <!-- 공통메뉴배경 끝 -->
+                <!-- 모바일 닫기 시작 -->
+                <a id="btnClose_gnb" class="mo gnbClose" href="#">닫기</a>
+                <!-- 모바일 닫기 끝 -->
+            </div>
+            <!-- 공통메뉴틀 끝 -->
+        </nav>
+        <!-- 공통메뉴 끝 -->
+    </div>
+    <!-- top_layout 끝 -->
+    <!-- body_layout 시작 -->
+    <div id="body_layout" class="sub">
+        <div class="body_wrap">
+            <!-- location_wrap 시작 -->
+            <div class="location_wrap">
+                <ul>
+                    <li class="home">HOME</li>
+                    <li>PRESS CENTER</li>
+                    <li>Photo News</li>
+                </ul>
+            </div>
+            <!-- location_wrap 끝 -->
+            <!-- tit_wrap 시작 -->
+            <div class="tit_wrap">
+                <h2>NEWS IN MEDIA</h2>
+                <ul class="util">
+                    <li class="print"><a href="#">PRINT</a></li>
+                    <li class="fa"><a href="#">FACEBOOK</a></li>
+                </ul>
+            </div>
+            <!-- tit_wrap 시작 -->
+            <!-- 본문 시작 -->
+            <div id="txt" class="txt">
+                <!-- news_bbs 시작 -->
+                <div class="news_bbs_sc">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="tit">Korea Export Recovery Continues With Daily Shipments Rising (Bloomberg)</span>
+                                <span class="date">Date : 2020-11-06</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="tit">Korea Export Recovery Continues With Daily Shipments Rising (Bloomberg)</span>
+                                <span class="date">Date : 2020-11-06</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="tit">Korea Export Recovery Continues With Daily Shipments Rising (Bloomberg)</span>
+                                <span class="date">Date : 2020-11-06</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="tit">Korea Export Recovery Continues With Daily Shipments Rising (Bloomberg)</span>
+                                <span class="date">Date : 2020-11-06</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="tit">Korea Export Recovery Continues With Daily Shipments Rising (Bloomberg)</span>
+                                <span class="date">Date : 2020-11-06</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="tit">Korea Export Recovery Continues With Daily Shipments Rising (Bloomberg)</span>
+                                <span class="date">Date : 2020-11-06</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="tit">Korea Export Recovery Continues With Daily Shipments Rising (Bloomberg)</span>
+                                <span class="date">Date : 2020-11-06</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- news_bbs 시작 -->
+                <!-- bbs_paging 시작 -->
+                <div class="bbs_paging_sc">
+                    <ul>
+                        <li class="first"><a href="#">First</a></li>
+                        <li class="prev"><a href="#">Prev</a></li>
+                        <li class="num on"><a href="#">1</a></li>
+                        <li class="num"><a href="#">2</a></li>
+                        <li class="num"><a href="#">3</a></li>
+                        <li class="num"><a href="#">4</a></li>
+                        <li class="num"><a href="#">5</a></li>
+                        <li class="num"><a href="#">6</a></li>
+                        <li class="num"><a href="#">7</a></li>
+                        <li class="num"><a href="#">8</a></li>
+                        <li class="num"><a href="#">9</a></li>
+                        <li class="num"><a href="#">10</a></li>
+                        <li class="next"><a href="#">Next</a></li>
+                        <li class="end"><a href="#">End</a></li>
+                    </ul>
+                </div>
+                <!-- bbs_paging 시작 -->
+            </div>
+            <!-- 본문 끝 -->
+        </div>
+    </div>
+    <!-- body_layout 끝 --> 
+    <!-- foot_layout 시작 -->
+    <div id="foot_layout">
+        <footer class="foot_wrap">
+            <address>
+                © 2016 Ministry of Trade, Industry and Energy.<br>All Rights Reserved. 402 Hannuri-daero, Sejong-si, 30118, Republic of Korea
+            </address>
+            <ul class="mark">
+                <li class="wa"><a href="#">한국 웹접근성인증마크</a></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- foot_layout 끝 -->
+</body>
+</html>

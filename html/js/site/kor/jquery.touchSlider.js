@@ -72,11 +72,24 @@
 			$.fn.extend(this, touchSlider);
 			this.opts = opts;
 			this.init();
-			$("#opbox .op_open").on("click",function(){
+			$("a, button").on("click",function(){
 				_this.resize(_this);
 			});
+
+			$(window).ready(function(){
+				_this.resize(_this);
+			});
+			$(window).load(function(){
+				_this.resize(_this);
+			});
+			setTimeout(() => {
+				_this.resize(_this);
+			}, 100);
+			setTimeout(() => {
+				_this.resize(_this);
+			}, 1000);
 			
-			$(window).on("orientationchange resize", function () {
+			$(window).on("orientationchange resize load ready", function () {
 				_this.resize(_this);
 			});
 		});

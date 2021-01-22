@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no, target-densitydpi=device-dpi" />
+<meta name="format-detection" content="telephone=no,email=no,address=no" />
+<title>산업통상자원부 홈페이지</title>
+<link rel="stylesheet" href="../../../css/site/core/core.css" />
+<link rel="stylesheet" href="../../../css/site/kor/layout.css" />
+<link rel="stylesheet" href="../../../css/site/kor/template.css" />
+<link rel="stylesheet" href="../../../css/site/kor/develop.css" />
+<link rel="stylesheet" href="../../../css/site/kor/content.css" />
+<script src="../../../js/core/jquery-1.11.2.min.js"></script>
+<script src="../../../js/site/kor/jquery.touchSlider.js"></script>
+<script src="../../../js/site/kor/common.js"></script>
+<script src="../../../js/site/kor/layout.js"></script>
+<!-- 추가 -->
+<script src="../../../js/site/kor/jquery.scrolltabs.js"></script>
+<script src="../../../js/site/kor/jquery-ui.js"></script>
+<script src="../../../js/site/kor/content_h.js"></script>
+<script src="../../../js/site/kor/content_y.js"></script>
+<!-- //추가 -->
+</head>
+<body>
+    <!-- top_layout 시작 -->
+    <div id="top_layout">
+        <!-- top_wrap 시작 -->
+        <header class="top_wrap">
+            <ul class="util">
+                <li class="sns in"><a href="#">인스타</a></li>
+                <li class="sns fa"><a href="#">페이스북</a></li>
+                <li class="sns yo"><a href="#">유튜브</a></li>
+                <li class="sns tw"><a href="#">트위터</a></li>
+                <li class="sns bl"><a href="#">블로그</a></li>
+                <li class="btn sitemap"><a href="#">사이트맵</a></li>
+                <li class="btn en"><a href="#">글로벌</a></li>
+                <li id="opbox" class="pop">
+                    <a class="op_open" href="#">팝업보기</a>
+                    <div id="op_slide" class="op_wrap">
+                        <!-- 슬라이더 컨텐츠 시작 -->
+                        <div class="sliderBox">
+                            <ul>
+                                <li><a href="#"><img src="../../../images/site/kor/sample/@op_slide_1.jpg" alt="1" /></a></li>
+                                <li><a href="#"><img src="../../../images/site/kor/sample/@op_slide_2.jpg" alt="2" /></a></li>
+                                <li><a href="#"><img src="../../../images/site/kor/sample/@op_slide_3.jpg" alt="3" /></a></li>
+                            </ul>
+                        </div>
+                        <!-- 슬라이더 컨텐츠 끝 -->
+                        <!-- 슬라이더 컨트럴 시작 -->
+                        <div class="controlBox">
+                            <div>
+                                <button type="button" class="btn_prev"><span>비쥬얼 이전</span></button>
+                                <button type="button" class="btn_stop"><span>비쥬얼 정지</span></button>
+                                <button type="button" class="btn_play"><span>비쥬얼 재생</span></button>
+                                <button type="button" class="btn_next"><span>비쥬얼 다음</span></button>
+                                <div class="paging"></div>
+                            </div>
+                        </div>
+                        <!-- 슬라이더 컨트럴 끝 -->
+                        <p class="op_btn">
+                            <a class="op_close" href="#">팝업닫기</a>
+                            <span class="today">
+                                <input id="todayClose" class="op_check" type="checkbox">
+                                <label class="op_today" for="todayClose">오늘하루 열지않기</label>
+                            </span>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="banner">
+                <li class="n1"><a href="#">국가상징에 대하여</a></li> 
+                <li class="n2"><a href="#">국민의 나라 정의로운 대한민국</a></li> 
+                <li class="n3"><a href="#">보다 나은 정부</a></li> 
+            </ul>
+            <h1 class="logo"><a href="#">산업통상자원부</a></h1>
+            <p class="mo top_menu">
+                <a id="btnAllmenu" class="menu" href="#">메뉴열기</a>
+                <a class="en" href="#">글로벌</a>
+            </p>
+            <div class="search">
+                <input type="text" placeholder="검색어를 입력하세요" />
+                <a class="btn" href="#">검색</a>
+            </div>
+        </header>
+        <!-- top_wrap 끝 -->
+        <!-- 공통메뉴 시작 -->
+        <nav id="gnb_layout" class="ct_type"><!-- a_type는 gnb의 타입 선택 -->
+            <!-- 공통메뉴틀 시작 -->
+            <div class="gnb_wrap">
+                <!-- 메뉴 시작 -->
+                <ul class="depth1_ul n6"><!-- depth1_ul의 n6 1차메뉴 전체수 -->
+                    <li class="n1"><!-- n1은 1차메뉴 n번째 수 -->
+                        <a href="#"><span>뉴스ㆍ공지</span></a>
+                        <ul class="depth2_ul">
+                            <li><a href="#" target="_blank">메뉴1-1</a></li>
+                            <li>
+                                <a href="#">메뉴1-2</a>
+                                <ul class="depth3_ul">
+                                    <li><a href="#">메뉴1-2-1</a></li>
+                                    <li><a href="#">메뉴1-2-2</a></li>
+                                    <li><a href="#">메뉴1-2-3</a></li>
+                                    <li><a href="#">메뉴1-2-4</a></li>
+                                    <li><a href="#">메뉴1-2-5</a></li>
+                                    <li><a href="#">메뉴1-2-6</a></li>
+                                    <li><a href="#">메뉴1-2-7</a></li>
+                                    <li><a href="#">메뉴1-2-8</a></li>
+                                    <li><a href="#">메뉴1-2-9</a></li>
+                                    <li><a href="#">메뉴1-2-10</a></li>
+                                    <li><a href="#">메뉴1-2-11</a></li>
+                                    <li><a href="#">메뉴1-2-12</a></li>
+                                    <li><a href="#">메뉴1-2-13</a></li>
+                                    <li><a href="#">메뉴1-2-14</a></li>
+                                    <li><a href="#">메뉴1-2-15</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">메뉴1-3</a></li>
+                            <li><a href="#">메뉴1-4</a></li>
+                            <li>
+                                <a href="#">메뉴1-5</a>
+                                <ul class="depth3_ul">
+                                    <li><a href="#">메뉴1-5-1</a></li>
+                                    <li><a href="#">메뉴1-5-2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="n2"><!-- n2은 1차메뉴 n번째 수 -->
+                        <a href="#"><span>정책</span></a>
+                        <ul class="depth2_ul">
+                            <li><a href="#">메뉴2-1</a></li>
+                            <li><a href="#">메뉴2-2</a></li>
+                            <li>
+                                <a href="#">메뉴2-3</a>
+                                <ul class="depth3_ul">
+                                    <li><a href="#">메뉴2-3-1</a></li>
+                                    <li><a href="#">메뉴2-3-2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">메뉴2-4</a></li>
+                        </ul>
+                    </li>
+                    <li class="n3"><!-- n3은 1차메뉴 n번째 수 -->
+                        <a href="#"><span>국민참여ㆍ민원</span></a>
+                        <ul class="depth2_ul">
+                            <li><a href="#">메뉴3-1</a></li>
+                            <li><a href="#">메뉴3-2</a></li>
+                            <li><a href="#">메뉴3-3</a></li>
+                            <li><a href="#">메뉴3-4</a></li>
+                            <li><a href="#">메뉴3-5</a></li>
+                        </ul>
+                    </li>
+                    <li class="n4"><!-- n4은 1차메뉴 n번째 수 -->
+                        <a href="#"><span>통계</span></a>
+                        <ul class="depth2_ul">
+                            <li><a href="#">메뉴4-1</a></li>
+                            <li>
+                                <a href="#">메뉴4-2</a>
+                                <ul class="depth3_ul">
+                                    <li><a href="#">메뉴4-2-1</a></li>
+                                    <li><a href="#">메뉴4-2-2</a></li>
+                                    <li><a href="#">메뉴4-2-3</a></li>
+                                    <li><a href="#">메뉴4-2-4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">메뉴4-3</a></li>
+                        </ul>
+                    </li>
+                    <li class="n5"><!-- n5은 1차메뉴 n번째 수 -->
+                        <a href="#"><span>법령</span></a>
+                        <ul class="depth2_ul">
+                            <li><a href="#">메뉴5-1</a></li>
+                            <li><a href="#">메뉴5-2</a></li>
+                            <li>
+                                <a href="#">메뉴5-3</a>
+                                <ul class="depth3_ul">
+                                    <li><a href="#">메뉴5-3-1</a></li>
+                                    <li><a href="#">메뉴5-3-2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">메뉴5-4</a></li>
+                        </ul>
+                    </li>
+                    <li class="n6"><!-- n6은 1차메뉴 n번째 수 -->
+                        <a href="#"><span>정보공개</span></a>
+                        <ul class="depth2_ul">
+                            <li><a href="#">메뉴6-1</a></li>
+                            <li><a href="#">메뉴6-2</a></li>
+                            <li><a href="#">메뉴6-3</a></li>
+                        </ul>
+                    </li>
+                    <li class="n7"><!-- n7은 1차메뉴 n번째 수 -->
+                        <a href="#"><span>산업부소개</span></a>
+                        <ul class="depth2_ul">
+                            <li><a href="#">메뉴7-1</a></li>
+                            <li><a href="#">메뉴7-2</a></li>
+                            <li><a href="#">메뉴7-3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 메뉴 끝 -->
+                <!-- 모바일 하단유틸 시작 -->
+                <div class="mo bottomUtile">
+                    <a class="sitemap" href="#">사이트맵</a>
+                    <ul class="sns">      
+                        <li class="in"><a href="#">인스타</a></li>
+                        <li class="fa"><a href="#">페이스북</a></li>
+                        <li class="yo"><a href="#">유튜브</a></li>
+                        <li class="tw"><a href="#">트위터</a></li>
+                        <li class="bl"><a href="#">블로그</a></li>
+                    </ul>
+                </div>
+                <!-- 모바일 하단유틸 끝 -->
+                <!-- 모바일 닫기 시작 -->
+                <a id="btnClose_gnb" class="mo gnbClose" href="#">닫기</a>
+                <!-- 모바일 닫기 끝 -->
+            </div>
+            <!-- 공통메뉴틀 끝 -->
+            <!-- 공통메뉴배경 시작 -->
+            <span class="gnb_bg"></span>
+            <!-- 공통메뉴배경 끝 -->
+        </nav>
+        <!-- 공통메뉴 끝 -->
+    </div>
+    <!-- top_layout 끝 -->
+    <!-- body_layout 시작 -->
+    <div id="body_layout" class="a_type sub">
+        <div class="body_wrap">
+            <!-- 서브메뉴 시작 -->
+            <aside id="lnb_layout" class="lnb_wrap">
+                <div class="tit">
+                    <h2>뉴스ㆍ공지</h2>
+                    <p>News &amp; Notice</p>
+                </div>
+                <ul class="depth2_ul">
+                    <li class="on">
+                        <a href="#">보도자료</a>
+                        <ul class="depth3_ul">
+                            <li class="on"><a href="#">보다/해명</a></li>
+                            <li><a href="#">주간보도계획</a></li>
+                            <li><a href="#">대변인브리핑</a></li>   
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">공지사항</a>
+                    </li>
+                    <li>
+                        <a href="#">사업공고</a>
+                    </li>
+                    <li>
+                        <a href="#">채용정보</a>
+                    </li>
+                    <li>
+                        <a href="#">정책뉴스</a>
+                        <ul class="depth3_ul">
+                            <li><a href="#">정책뉴스1</a></li>
+                            <li><a href="#">정책뉴스2</a></li>
+                            <li><a href="#">정책뉴스3</a></li>   
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">정책홍보(산소통)</a>
+                    </li>
+                    <li>
+                        <a href="#">포상공개검증</a>
+                    </li>
+                </ul>
+            </aside>
+            <!-- 서브메뉴 끝 -->
+            <!-- 컨텐츠 시작 -->
+            <div class="content_wrap">
+                <div class="location_wrap">
+                    <ul>
+                        <li class="home">홈</li>
+                        <li>뉴스ㆍ공지</li>
+                        <li>보도자료</li>
+                        <li>보도/해명</li>
+                    </ul>
+                </div>
+                <div class="tit_wrap">
+                    <h3>무역·투자</h3>
+                    <ul>
+                        <li class="print"><a href="#">프린트</a></li>
+                        <li class="fa"><a href="#">페이스북</a></li>
+                        <li class="tw"><a href="#">트위터</a></li>
+                    </ul>
+                </div>
+                <div class="txt">
+                <!-- 본문 시작 -->
+                    <div class="policy_wrap">
+                        <div class="policy_sorting_area">
+                            <div class="policy_img"><img src="../../../images/site/kor/inc_h/img_policy02.png" alt=""></div>
+                            <div class="policy_info">
+                                <ul>
+                                    <li><a href="#none">전자무역 활성화</a></li><!-- 활성화시 클래스 'on' 추가 -->
+                                    <li><a href="#none">중소·중견기업 수출경쟁력 강화</a></li>
+                                    <li class="on"><a href="#none">자유무역지역 조성 및 활성화</a></li>
+                                    <li><a href="#none">국내 수출입기업에 무역보험·보증 지원</a></li>
+                                    <li><a href="#none">전략물자관리제도</a></li>
+                                    <li><a href="#none">원산지 관리</a></li>
+                                    <li><a href="#none">외국인투자유치 정책</a></li>
+                                    <li><a href="#none">U턴기업 지원</a></li>
+                                    <li><a href="#none">개성공단 입주기업 지원</a></li>
+                                    <li><a href="#none">경제자유구역 외국인 투자유치 본격 추진</a></li>
+                                    <li><a href="#none">무역조정지원제도</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="policy_tit_area">
+                            <p>자유무역지역 조성 및 활성화</p>
+                        </div>
+                        <div class="policy_cont_area">
+                            <p class="tit">정책개요</p>
+                            <dl class="policy_cont">
+                                <dt>개요</dt>
+                                <dd>
+                                    <ul class="policy_cont_list">
+                                        <li>자유무역지역은 관세유보, 조세감면, 기반시설 제공 등 다양한 지원을 통해 자유로운 제조·물류·유통 및 무역활동 등을 보장함으로써 외국인투자 유치, 무역 진흥, 국제물류 원활화 및 지역개발 등을 촉진하기 위해 지정된 지역입니다.</li>
+                                        <li>2020년 3월말 현재 자유무역지역은 입지조선 및 관리권자에 따라 산업단지형 7개, 항만형 5개, 공항형 1개 등 13개 지역이 운영되고 있습니다.
+                                            <span class="inner_cont txt_skyblue">* 관리기관 산업단지형(산업부), 항만형(해수부), 공항형(국토부)</span>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <div class="policy_image_wrap">
+                                <img src="../../../images/site/kor/inc_h/img_policy_map.png" alt="">
+                            </div>
+                        </div>
+                        <div class="policy_cont_area">
+                            <p class="tit">정책 상세내용</p>
+                            <dl class="policy_cont">
+                                <dt>자유무역지역은 1970년 마산수출자유지역으로 출범하여 2000년 자유무역지역으로 확대, 2004년 제조업 중심의 ‘자유무역지역’과 물류업 중심의 ‘관세자유지역’을 통합하였습니다.</dt>
+                                <dd></dd>
+                            </dl>
+                            <dl class="policy_cont">
+                                <dt>2020년 3월말 현재, 13개 지역에 298개 외국인 투자기업, 810개 국내 수출기업 등 총 1,108개 기업이 입주해 있습니다.</dt>
+                                <dd></dd>
+                            </dl>
+                            <dl class="policy_cont">
+                                <dt>산업단지형 자유무역지역 현황(`20.3월말 기준)</dt>
+                                <dd>
+                                    <div class="table_area">
+                                        <table class="contentTable05 nano mb30">
+                                            <caption>산업단지별 자유무역지역 지정일, 면적, 업체수, 입주율, 고용인원</caption>
+                                            <colgroup>
+                                                <col width="*">
+                                                <col width="14%">
+                                                <col width="11%">
+                                                <col width="11%">
+                                                <col width="11%">
+                                                <col width="11%">
+                                                <col width="11%">
+                                                <col width="11%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">구분</th>
+                                                    <th scope="col">마산</th>
+                                                    <th scope="col">군산</th>
+                                                    <th scope="col">대불</th>
+                                                    <th scope="col">동해</th>
+                                                    <th scope="col">율촌</th>
+                                                    <th scope="col">울산</th>
+                                                    <th scope="col">김제</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" class="center">지정일</th>
+                                                    <td>
+                                                        ‘70.3(1공구)<br>
+                                                        ‘72.12(2공구)<br>
+                                                        ‘02.11(3공구)
+                                                    </td>
+                                                    <td>‘00.10.6</td>
+                                                    <td>‘02.11.21</td>
+                                                    <td>‘05.12.12</td>
+                                                    <td>‘05.12.12</td>
+                                                    <td>‘08.12.8</td>
+                                                    <td>‘09.1.6</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="center">면적(천m2)</th>
+                                                    <td>957</td>
+                                                    <td>1,256</td>
+                                                    <td>1,157</td>
+                                                    <td>248</td>
+                                                    <td>344</td>
+                                                    <td>819</td>
+                                                    <td>991</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="center">임주업체(개사)</th>
+                                                    <td>117</td>
+                                                    <td>32</td>
+                                                    <td>34</td>
+                                                    <td>16</td>
+                                                    <td>18</td>
+                                                    <td>36</td>
+                                                    <td>30</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="center">-(외투기업, 개사)</th>
+                                                    <td>(69)</td>
+                                                    <td>(19)</td>
+                                                    <td>(19)</td>
+                                                    <td>(7)</td>
+                                                    <td>(14)</td>
+                                                    <td>(8)</td>
+                                                    <td>(25)</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="center">입주율(%)</th>
+                                                    <td>96.1</td>
+                                                    <td>91.4</td>
+                                                    <td>97.9</td>
+                                                    <td>62.9</td>
+                                                    <td>68.4</td>
+                                                    <td>94.1</td>
+                                                    <td>56.6</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="center">고용인원</th>
+                                                    <td>5,408</td>
+                                                    <td>1,657</td>
+                                                    <td>893</td>
+                                                    <td>165</td>
+                                                    <td>224</td>
+                                                    <td>1,313</td>
+                                                    <td>382</td>
+                                                </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="policy_cont">
+                                <dt>공항·항만형 자유무역지역 현황(`20.3월말 기준)</dt>
+                                <dd>
+                                    <div class="table_area">
+                                        <table>
+                                            <caption>공항·항만별 자유무역지역 지정일, 면적, 업체수, 입주율, 고용인원</caption>
+                                                <colgroup>
+                                                    <col width="*">
+                                                    <col width="12%">
+                                                    <col width="12%">
+                                                    <col width="12%">
+                                                    <col width="12%">
+                                                    <col width="13%">
+                                                    <col width="16%">
+                                                </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">구분</th>
+                                                    <th scope="col">부산항</th>
+                                                    <th scope="col">광양항</th>
+                                                    <th scope="col">인천항</th>
+                                                    <th scope="col">포항항</th>
+                                                    <th scope="col">평택·당진항</th>
+                                                    <th scope="col">인천국제공항</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" class="center">지정일</th>
+                                                    <td>‘02.1.1</td>
+                                                    <td>‘02.1.1</td>
+                                                    <td>‘03.1.1</td>
+                                                    <td>‘08.12.8</td>
+                                                    <td>‘09.3.30</td>
+                                                    <td>
+                                                        ‘05.4.6(1차)<br>
+                                                        '07.12.31(2차)
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="center">면적(천m2)</th>
+                                                    <td>12,195</td>
+                                                    <td>9,047</td>
+                                                    <td>1,837</td>
+                                                    <td>925</td>
+                                                    <td>1,429</td>
+                                                    <td>3,050</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="center">입주업체(개사)</th>
+                                                    <td>67</td>
+                                                    <td>50</td>
+                                                    <td>1</td>
+                                                    <td>3</td>
+                                                    <td>15</td>
+                                                    <td>689</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="center">-(외투업체, 개사)</th>
+                                                    <td>64</td>
+                                                    <td>28</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>9</td>
+                                                    <td>36</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="center">입주율(%)</th>
+                                                    <td>76.8</td>
+                                                    <td>92.9</td>
+                                                    <td>100</td>
+                                                    <td>79.0</td>
+                                                    <td>100</td>
+                                                    <td>91.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="center">고용인원</th>
+                                                    <td>2,785</td>
+                                                    <td>1,246</td>
+                                                    <td>40</td>
+                                                    <td>24</td>
+                                                    <td>740</td>
+                                                    <td>15,087</td>
+                                                </tr>
+                                            </tbody>
+                                    </table>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="policy_cont">
+                                <dt>인센티브</dt>
+                                <dd>
+                                    <ul class="policy_cont_list">
+                                        <li>(관세 등 특례) 자유무역지역에 반입된 외국물품은 관세 등을 유보하고 관세영역(자유무역지역 외 국내지역)으로 반출할 때 부과
+                                            <span class="inner_cont txt_grey">* 자유무역지역에서 사용 또는 소비하려는 내국물품, 입주업체간에 공급하거나 제공하는 외국물품과 용역 등에 대해 부가가치세 영세율 적용</span>
+                                        </li>
+                                        <li>(저렴한 임대료) 부지가액의 1% 수준(국유재산법상 임대료는 2.5%), 외국인투자기업으로서 일정요건을 충족하는 경우 무상임대</li>
+                                        <li>(외투기업 지방세감면) 지원대상 업종별로 투자규모에 따라 조례로 최장 15년간 지방세 감면</li>
+                                        <li>(규제완화) 장애인・유공자・고령자 의무고용 등 적용 배제 및 교통유발부담금 면제</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="policy_cont_area">
+                            <p class="tit">관련자료</p>
+                            <div class="policy_file_area">
+                                <ul>
+                                    <li><a href="#none" class="file"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt="">제조업 르네상스 비전 및 전략</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="policy_cont_area">
+                            <p class="tit">관련법령</p>
+                            <div class="policy_file_area">
+                                <ul>
+                                    <li><a href="#none" class="file"><img src="../../../images/site/kor/inc_h/ico_file_file.png" alt="">제조업 르네상스 비전 및 전략</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="policy_cont_area">
+                            <p class="tit">유관기관 연락처</p>
+                            <div class="policy_cont policy_contact">
+                                <ul class="policy_cont_list">
+                                    <li>마산자유무역지역관리원 ( www.motie.go.kr/ftz/masan )</li>
+                                    <li>군산자유무역지역관리원 ( www.motie.go.kr/ftz/gunsan )</li>
+                                    <li>대불자유무역지역관리원 ( www.motie.go.kr/ftz/daebul )</li>
+                                    <li>동해자유무역지역관리원 ( www.motie.go.kr/ftz/donghae )</li>
+                                    <li>율촌자유무역지역관리원 ( www.motie.go.kr/ftz/yulchon )</li>
+                                    <li>울산자유무역지역관리원 ( www.motie.go.kr/ftz/ulsan )</li>
+                                    <li>김제자유무역지역관리원 ( www.motie.go.kr/ftz/gimje )</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- contact -->
+                    <div class="contact_wrap">
+                        <dl>
+                            <dt>궁금하신 사항이 있으세요?</dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        <span class="member_tit">담당부서</span>
+                                        <span class="member_info">혁신지원팀</span>
+                                    </li>
+                                    <li>
+                                        <span class="member_tit">담당자</span>
+                                        <span class="member_info">전기곤 주무관</span>
+                                    </li>
+                                    <li>
+                                        <span class="member_tit">연락처</span>
+                                        <span class="member_info">044-203-4635</span>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <!-- //contact -->
+
+                    <!-- satisfaction -->
+                    <div class="satisfaction_wrap">
+                        <p class="satisfaction_tit">이 페이지에서 제공하는 정보에 만족하셨습니까?</p>
+                        <div class="satisfaction_cont">
+                            <span class="style_rdo">
+                                <input type="radio" id="satisfaction_rdo_01" name="satisfaction_rdo_box01" checked>
+                                <label for="satisfaction_rdo_01">매우만족</label> 
+                            </span>
+                            <span class="style_rdo">
+                                <input type="radio" id="satisfaction_rdo_02" name="satisfaction_rdo_box01">
+                                <label for="satisfaction_rdo_02">만족</label> 
+                            </span>
+                            <span class="style_rdo">
+                                <input type="radio" id="satisfaction_rdo_03" name="satisfaction_rdo_box0">
+                                <label for="satisfaction_rdo_03">보통</label> 
+                            </span>
+                            <span class="style_rdo">
+                                <input type="radio" id="satisfaction_rdo_04" name="satisfaction_rdo_box01">
+                                <label for="satisfaction_rdo_04">불만족</label> 
+                            </span>
+                            <span class="style_rdo">
+                                <input type="radio" id="satisfaction_rdo_05" name="satisfaction_rdo_box01">
+                                <label for="satisfaction_rdo_05">매우불만족</label> 
+                            </span>
+                            <button class="btn btn_L btn_blue"><span>확인</span></button>
+                        </div>
+                    </div>
+                    <!-- //satisfaction -->
+
+                <!-- 본문 끝 -->
+                </div>
+            </div>
+            <!-- 컨텐츠 끝 -->
+        </div>
+    </div>
+    <!-- body_layout 끝 -->
+    <!-- foot_layout 시작 -->
+    <div id="foot_layout">
+        <footer class="foot_wrap">
+            <ul class="tel">
+                <li>대표전화<span>1577-0900</span></li>
+                <li>당직실<span>044-203-4000</span></li>
+            </ul>
+            <ul class="link">
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">저작권 정책</a></li>
+                <li><a href="#">정보공개청구</a></li>
+                <li><a href="#">조직 및 전화번호 안내</a></li>
+                <li><a href="#">홈페이지 정보오류신고</a></li>
+            </ul>
+            <address>
+                (우)30118 세종특별자치시 한누리대로 402 12동, 13동 산업통상자원부
+                <span>Copyright©2016 산업통상자원부. All Rights Reserved.</span>
+            </address>
+            <ul class="mark">
+                <li class="kogl"><a href="#">공공저작물 마크</a></li>
+                <li class="wa"><a href="#">한국 웹접근성인증마크</a></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- foot_layout 끝 -->
+</body>
+</html>

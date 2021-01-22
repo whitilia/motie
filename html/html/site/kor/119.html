@@ -278,7 +278,7 @@
                     </ul>
                 </div>
                 <div class="tit_wrap">
-                    <h3>보도/해명</h3>
+                    <h3>일일산업동향</h3>
                     <ul>
                         <li class="print"><a href="#">프린트</a></li>
                         <li class="fa"><a href="#">페이스북</a></li>
@@ -288,127 +288,220 @@
                 <div class="txt">
                 <!-- 본문 시작 -->
 
-                    <!-- viewer - default -->
-                    <div class="board_view_wrap daily_report">
-                        <ul>
-                            <li>
-                                <span class="cell head"><span>제목</span></span>
-                                <span class="cell">문헌정보 산업의 디지털 전환, 국제표준으로 기반 다진다</span>
-                            </li>
-                            <li class="col">
-                                <span class="cell head"><span>담당자</span></span>
-                                <span class="cell">박진우</span>
-                                <span class="cell head"><span>담당부서</span></span>
-                                <span class="cell">전기전자정보표준과</span>
-                                <span class="cell head"><span>연락처</span></span>
-                                <span class="cell">043-870-5369</span>
-                            </li>
-                            <li class="col">
-                                <span class="cell head"><span>등록일</span></span>
-                                <span class="cell">2020-11-04</span>
-                                <span class="cell head"><span>조회수</span></span>
-                                <span class="cell">785</span>
-                            </li>
-                            <li class="content report">
-                                <span class="cell head"><span>주요일일지표</span></span>
-                                <span class="cell">
-                                    <span class="report_area">
-                                        <span class="tit_area"><span>주가(pt)</span></span>
-                                        <span class="cont_area">
-                                            <span class="report_stock">
-                                                <span class="stock_box">
-                                                    <span class="stock down">10.25P</span><!-- 상승시 클래스'up' / 다운시 클래스 'down' 추가 -->
-                                                    <span class="price">2,475.62</span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </span>
-                                    <span class="report_area">
-                                        <span class="tit_area"><span>환율(원/$)</span></span>
-                                        <span class="cont_area">
-                                            <span class="report_stock">
-                                                <span class="stock_box">
-                                                    <span class="stock up">4.80원</span><!-- 상승시 클래스'up' / 다운시 클래스 'down' 추가 -->
-                                                    <span class="price">1,114.80</span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </span>
-                                    <span class="report_area">
-                                        <span class="tit_area"><span>유가($/B, Dubai)</span></span>
-                                        <span class="cont_area">
-                                            <span class="report_stock">
-                                                <span class="stock_box">
-                                                    <span class="stock up">4.80원</span><!-- 상승시 클래스'up' / 다운시 클래스 'down' 추가 -->
-                                                    <span class="price">44.44</span>
-                                                </span>
-                                                <span class="txt_noti">11월 11일</span>
-                                            </span>
-                                        </span>
-                                    </span>
+                    <!-- sorting - multi -->
+                    <div class="sorting_wrap">
+                        <dl>
+                            <dt>기간선택</dt>
+                            <dd>
+                                <span class="style_chk">
+                                    <input type="checkbox" id="chk01" name="chk_box01" checked>
+                                    <label for="chk01">날짜 미지정</label> 
                                 </span>
-                            </li>
-                            <li class="content report">
-                                <span class="cell head"><span>주요이슈</span></span>
-                                <span class="cell">
-                                    <span class="report_area">
-                                        <span class="tit_area"><span>국내</span></span>
-                                        <span class="cont_area">
-                                            <span class="report_txt">KIEP, 내년 세계 성장률 5% 전망…"재정 건전성이 중요"</span>
-                                            <span class="report_txt">한전, 저유가 덕에 3분기 누적 흑자 3조2천억 원</span>
-                                        </span>
+                                <div class="cal_area">
+                                    <span class="input_cal">
+                                        <input type="text" class="datepicker">
                                     </span>
-                                    <span class="report_area">
-                                        <span class="tit_area"><span>해외</span></span>
-                                        <span class="cont_area">
-                                            <span class="report_txt">모더나 임상 발표 예고, 주가 8.4% 급등…파우치 "기대"</span>
-                                            <span class="report_txt">中 보복소비 터졌다…광군제 83조원 판매 신기록</span>
-                                        </span>
+                                    <span class="wave">~</span>
+                                    <span class="input_cal">
+                                        <input type="text" class="datepicker">
                                     </span>
+                                </div>
+                                <div class="btn_area">
+                                    <button class="btn btn_term on"><span>1주일</span></button><!-- 활성화시 클래스 'on' 추가 -->
+                                    <button class="btn btn_term"><span>1개월</span></button>
+                                    <button class="btn btn_term"><span>3개월</span></button>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>구분</dt>
+                            <dd class="search_area">
+                                <span class="select">
+                                    <select name="" id="">
+                                        <option value="">선택</option>
+                                        <option value="">선택</option>
+                                        <option value="">선택</option>
+                                    </select>
                                 </span>
-                            </li>
-                            <li class="content report">
-                                <span class="cell head"><span>금일발표보고서</span></span>
-                                <span class="cell">
-                                    <span class="report_area">
-                                        <span class="cont_area">
-                                            <span class="report_txt">KIEP, 내년 세계 성장률 5% 전망…"재정 건전성이 중요"</span>
-                                            <span class="report_txt">한전, 저유가 덕에 3분기 누적 흑자 3조2천억 원</span>
-                                        </span>
-                                    </span>
+                                <span class="input">
+                                    <input type="text">
                                 </span>
-                            </li>
-                            <li class="content">
-                                <span class="cell head"><span>첨부파일</span></span>
-                                <span class="cell">
-                                    <a href="#none" class="file"><img src="../../../images/site/kor/inc_h/ico_file_pdf.png" alt="">1105(6조간) 전기전자정보표준과, 문헌정보 기술호환성 국제표준화 주도.pdf [144.7 KB]</a>
-                                    <a href="#none" class="file"><img src="../../../images/site/kor/inc_h/ico_file_hwp.png" alt="">1105(6조간) 전기전자정보표준과, 문헌정보 기술호환성 국제표준화 주도.pdf [144.7 KB]</a>
-                                </span>
-                            </li>
-                        </ul>
-                        <div class="btn_area">
-                            <button class="btn btn_black"><span>목록</span></button>
-                        </div>
-                        <div class="board_view_navi">
-                            <ul>
-                                <li>
-                                    <a href="#none">
-                                        <span>이전글</span>
-                                        <span class="prev">이전</span>
-                                        <span>(참고자료)한국, G20 표준 서밋에 K-방... 새 게시물</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#none">
-                                        <span>다음글</span>
-                                        <span class="next">다음</span>
-                                        <span>다음글이 없습니다.</span>
-                                    </a>
-                                </li>
-                            </ul>
+                                <button class="btn btn_search btn_blue"><span>검색</span></button>
+                            </dd>
+                        </dl>
+                    </div>
+                    <!-- //sorting - multi -->
+
+                    <!-- board - list -->
+                    <div class="board_wrap">
+                        <p class="board_count">전체 <span>24,115</span> 건</p>
+                        <table>
+                            <colgroup>
+                                <col width="7%">
+                                <col width="">
+                                <col width="13%">
+                                <col width="7%">
+                                <col width="9%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="mobile"><span>번호</span></th>
+                                    <th class="mobile"><span>제목</span></th>
+                                    <th class="mobile last"><span>등록일</span></th>
+                                    <th><span>조회수</span></th>
+                                    <th><span>첨부파일</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile">24,115</td>
+                                    <td class="ta_l mobile"><a href="#none"><span class="tag">자료</span> 광양만 경제자유구역 율촌항만부지 “글로벌 해"광양만 경제자유구역 율촌항만부지 “글로벌 해"</a></td>
+                                    <td class="mobile last">2020-11-04</td>
+                                    <td>785</td>
+                                    <td><a href="#none"><img src="../../../images/site/kor/inc_h/ico_file_word.png" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="mobile">24,115</td>
+                                    <td class="ta_l mobile"><a href="#none"><span class="tag">자료</span> 광양만 경제자유구역 율촌항만부지 “글로벌 해"광양만 경제자유구역 율촌항만부지 “글로벌 해"</a></td>
+                                    <td class="mobile last">2020-11-04</td>
+                                    <td>785</td>
+                                    <td><a href="#none"><img src="../../../images/site/kor/inc_h/ico_file_word.png" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="mobile">24,115</td>
+                                    <td class="ta_l mobile"><a href="#none"><span class="tag">자료</span> 광양만 경제자유구역 율촌항만부지 “글로벌 해"광양만 경제자유구역 율촌항만부지 “글로벌 해"</a></td>
+                                    <td class="mobile last">2020-11-04</td>
+                                    <td>785</td>
+                                    <td><a href="#none"><img src="../../../images/site/kor/inc_h/ico_file_word.png" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="mobile">24,115</td>
+                                    <td class="ta_l mobile"><a href="#none"><span class="tag">자료</span> 광양만 경제자유구역 율촌항만부지 “글로벌 해"광양만 경제자유구역 율촌항만부지 “글로벌 해"</a></td>
+                                    <td class="mobile last">2020-11-04</td>
+                                    <td>785</td>
+                                    <td><a href="#none"><img src="../../../images/site/kor/inc_h/ico_file_word.png" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="mobile">24,115</td>
+                                    <td class="ta_l mobile"><a href="#none"><span class="tag">자료</span> 광양만 경제자유구역 율촌항만부지 “글로벌 해"광양만 경제자유구역 율촌항만부지 “글로벌 해"</a></td>
+                                    <td class="mobile last">2020-11-04</td>
+                                    <td>785</td>
+                                    <td><a href="#none"><img src="../../../images/site/kor/inc_h/ico_file_word.png" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="mobile">24,115</td>
+                                    <td class="ta_l mobile"><a href="#none"><span class="tag">자료</span> 광양만 경제자유구역 율촌항만부지 “글로벌 해"광양만 경제자유구역 율촌항만부지 “글로벌 해"</a></td>
+                                    <td class="mobile last">2020-11-04</td>
+                                    <td>785</td>
+                                    <td><a href="#none"><img src="../../../images/site/kor/inc_h/ico_file_word.png" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="mobile">24,115</td>
+                                    <td class="ta_l mobile"><a href="#none"><span class="tag">자료</span> 광양만 경제자유구역 율촌항만부지 “글로벌 해"광양만 경제자유구역 율촌항만부지 “글로벌 해"</a></td>
+                                    <td class="mobile last">2020-11-04</td>
+                                    <td>785</td>
+                                    <td><a href="#none"><img src="../../../images/site/kor/inc_h/ico_file_word.png" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="mobile">24,115</td>
+                                    <td class="ta_l mobile"><a href="#none"><span class="tag">자료</span> 광양만 경제자유구역 율촌항만부지 “글로벌 해"광양만 경제자유구역 율촌항만부지 “글로벌 해"</a></td>
+                                    <td class="mobile last">2020-11-04</td>
+                                    <td>785</td>
+                                    <td><a href="#none"><img src="../../../images/site/kor/inc_h/ico_file_word.png" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="mobile">24,115</td>
+                                    <td class="ta_l mobile"><a href="#none"><span class="tag">자료</span> 광양만 경제자유구역 율촌항만부지 “글로벌 해"광양만 경제자유구역 율촌항만부지 “글로벌 해"</a></td>
+                                    <td class="mobile last">2020-11-04</td>
+                                    <td>785</td>
+                                    <td><a href="#none"><img src="../../../images/site/kor/inc_h/ico_file_word.png" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="mobile">24,115</td>
+                                    <td class="ta_l mobile"><a href="#none"><span class="tag">자료</span> 광양만 경제자유구역 율촌항만부지 “글로벌 해"광양만 경제자유구역 율촌항만부지 “글로벌 해"</a></td>
+                                    <td class="mobile last">2020-11-04</td>
+                                    <td>785</td>
+                                    <td><a href="#none"><img src="../../../images/site/kor/inc_h/ico_file_word.png" alt=""></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //board - list -->
+
+                    <!-- paging -->
+                    <div class="paging_area">
+                        <a href="#none" class="btn_prev_all"><span>맨처음으로</span></a>
+                        <a href="#none" class="btn_prev"><span>이전</span></a>
+                        <a href="#none">1</a>
+                        <a href="#none">2</a>
+                        <a href="#none">3</a>
+                        <a href="#none">4</a>
+                        <a href="#none" class="on">5</a>
+                        <a href="#none">6</a>
+                        <a href="#none">7</a>
+                        <a href="#none">8</a>
+                        <a href="#none">9</a>
+                        <a href="#none">10</a>
+                        <a href="#none">111</a>
+                        <a href="#none">112</a>
+                        <a href="#none">113</a>
+                        <a href="#none" class="btn_next"><span>다음</span></a>
+                        <a href="#none" class="btn_next_all"><span>맨끝으로</span></a>
+                    </div>
+                    <!-- //paging -->
+
+                    <!-- satisfaction -->
+                    <div class="satisfaction_wrap">
+                        <p class="satisfaction_tit">이 페이지에서 제공하는 정보에 만족하셨습니까?</p>
+                        <div class="satisfaction_cont">
+                            <span class="style_rdo">
+                                <input type="radio" id="satisfaction_rdo_01" name="satisfaction_rdo_box01" checked>
+                                <label for="satisfaction_rdo_01">매우만족</label> 
+                            </span>
+                            <span class="style_rdo">
+                                <input type="radio" id="satisfaction_rdo_02" name="satisfaction_rdo_box01">
+                                <label for="satisfaction_rdo_02">만족</label> 
+                            </span>
+                            <span class="style_rdo">
+                                <input type="radio" id="satisfaction_rdo_03" name="satisfaction_rdo_box0">
+                                <label for="satisfaction_rdo_03">보통</label> 
+                            </span>
+                            <span class="style_rdo">
+                                <input type="radio" id="satisfaction_rdo_04" name="satisfaction_rdo_box01">
+                                <label for="satisfaction_rdo_04">불만족</label> 
+                            </span>
+                            <span class="style_rdo">
+                                <input type="radio" id="satisfaction_rdo_05" name="satisfaction_rdo_box01">
+                                <label for="satisfaction_rdo_05">매우불만족</label> 
+                            </span>
+                            <button class="btn btn_L btn_blue"><span>확인</span></button>
                         </div>
                     </div>
-                    <!-- //viewer - default -->
+                    <!-- //satisfaction -->
+
+                    <!-- contact -->
+                    <div class="contact_wrap">
+                        <dl>
+                            <dt>궁금하신 사항이 있으세요?</dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        <span class="member_tit">담당부서</span>
+                                        <span class="member_info">산업정책과</span>
+                                    </li>
+                                    <li>
+                                        <span class="member_tit">담당자</span>
+                                        <span class="member_info">서준혁 주무관</span>
+                                    </li>
+                                    <li>
+                                        <span class="member_tit">연락처</span>
+                                        <span class="member_info">044-203-4218</span>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <!-- //contact -->
 
                 <!-- 본문 끝 -->
                 </div>

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no, target-densitydpi=device-dpi" />
+<meta name="format-detection" content="telephone=no,email=no,address=no" />
+<title>산업통상자원부 홈페이지</title>
+<link rel="stylesheet" href="../../../css/site/core/core.css" />
+<link rel="stylesheet" href="../../../css/site/eng/layout.css" />
+<link rel="stylesheet" href="../../../css/site/eng/main.css" />
+<script src="../../../js/core/jquery-1.11.2.min.js"></script>
+<script src="../../../js/site/eng/jquery.touchSlider.js"></script>
+<script src="../../../js/site/eng/jquery-ui.custom.js"></script>
+<script src="../../../js/site/eng/stateScrollObj.js"></script>
+<script src="../../../js/site/eng/common.js"></script>
+<script src="../../../js/site/eng/layout.js"></script>
+<script src="../../../js/site/eng/main.js"></script>
+</head>
+<body>
+    <!-- 스킵네비 시작 -->
+    <div id="skipnavi">
+        <a href="#body_layout">본문 바로가기</a>
+    	<a href="#gnb_layout">주메뉴 바로가기</a>
+    </div>
+    <!-- 스킵네비 끝 -->
+    <div id="op_layout">
+        <a class="op_open" href="#">Open a pop-up window</a>
+        <div id="slide_op" class="slide_wrap">
+            <div class="sliderBox">
+                <ul>
+                    <li><a href="#"><img src="../../../images/site/eng/inc/op_img_1.png" /></a></li>
+                    <li><a href="#"><img src="../../../images/site/eng/inc/op_img_1.png" /></a></li>
+                </ul>
+            </div>
+            <div class="controlBox">
+                <div class="control">
+                    <button type="button" class="btn_stop" style="display: block;"><span>STOP</span></button>
+                    <button type="button" class="btn_play" style="display: none;"><span>PLAY</span></button>
+                    <button type="button" class="btn_prev"><span>PREV</span></button>
+                    <button type="button" class="btn_next"><span>NEXT</span></button>
+                    <div class="paging"></div>
+                </div>
+                <div class="close">
+                    <input id="opClose" type="checkbox">
+                    <a href="#">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- top_layout 시작 -->
+    <div id="top_layout">
+        <!-- top_wrap 시작 -->
+        <header class="top_wrap">
+            <h1 class="logo"><a href="#">Ministry of Trade, Industry and Energy</a></h1>
+            <div class="search">
+                <input type="text">
+                <a class="btn" href="#">search</a>
+            </div>
+            <div class="util">
+                <ul class="sns_wrap">
+                    <li class="sns fa"><a href="#">FACEBOOK</a></li>
+                    <li class="sns tw"><a href="#">TWITTER</a></li> 
+                    <li class="sns ma"><a href="#">MAIL</a></li>
+                </ul>
+                <ul class="btn_wrap">
+                    <li class="btn sitemap"><a href="#">SITEMAP</a></li>
+                    <li class="btn en"><a href="#">KOREAN</a></li>
+                </ul>
+            </div>
+            <div class="mo mo_menu">
+                <a id="btnAllmenu" class="menu" href="#">메뉴열기</a>
+            </div>
+        </header>
+        <!-- top_wrap 끝 -->
+        <!-- 공통메뉴 시작 -->
+        <nav id="gnb_layout" class="a_type"><!-- a_type는 gnb의 타입 선택 -->
+            <!-- 공통메뉴틀 시작 -->
+            <div class="gnb_wrap">
+                <!-- 메뉴 시작 -->
+                <ul class="depth1_ul n4"><!-- depth1_ul의 n6 1차메뉴 전체수 -->
+                    <li class="n1"><!-- n1은 1차메뉴 n번째 수 -->
+                        <a href="#"><span>PRESS CENTER</span></a>
+                        <ul class="depth2_ul">
+                            <li><a href="#">Photo News</a></li>
+                            <li><a href="#">Press Releases</a></li>
+                            <li><a href="#">Speeches & Articles</a></li>
+                            <li><a href="#">News In Media</a></li>
+                            <li><a href="#">Graphic News</a></li>
+                        </ul>
+                    </li>
+                    <li class="n2"><!-- n2은 1차메뉴 n번째 수 -->
+                        <a href="#"><span>TOPICS</span></a>
+                        <ul class="depth2_ul">
+                            <li><a href="#">Industry</a></li>
+                            <li><a href="#">Trade/Investment</a></li>
+                            <li><a href="#">Energy</a></li>
+                            <li><a href="#">FTA/Economic Cooperation</a></li>
+                            <li><a href="#">All Topics</a></li>
+                        </ul>
+                    </li>
+                    <li class="n3"><!-- n3은 1차메뉴 n번째 수 -->
+                        <a href="#"><span>INFORMATION</span></a>
+                        <ul class="depth2_ul">
+                            <li><a href="#">Korea's FTA Network</a></li>
+                            <li><a href="#">Forum & EXPO</a></li>
+                            <li><a href="#">Invest Korea</a></li>
+                            <li><a href="#">Trade Balance</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                        </ul>
+                    </li>
+                    <li class="n4"><!-- n4은 1차메뉴 n번째 수 -->
+                        <a href="#"><span>ABOUT MINISTRY</span></a>
+                        <ul class="depth2_ul">
+                            <li><a href="#">Introduction</a></li>
+                            <li><a href="#">Minister & Vice Ministers</a></li>
+                            <li><a href="#">Organizational Structure</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 메뉴 끝 -->
+                <!-- 공통메뉴배경 시작 -->
+                <span class="gnb_bg"></span>
+                <!-- 공통메뉴배경 끝 -->
+                <!-- 모바일 닫기 시작 -->
+                <a id="btnClose_gnb" class="mo gnbClose" href="#">닫기</a>
+                <!-- 모바일 닫기 끝 -->
+            </div>
+            <!-- 공통메뉴틀 끝 -->
+        </nav>
+        <!-- 공통메뉴 끝 -->
+    </div>
+    <!-- top_layout 끝 -->
+    <!-- body_layout 시작 -->
+    <div id="body_layout">
+        <div class="body_wrap">
+            <div class="wGroup n1">
+                <!-- news_wrap 시작 -->
+                <section class="news_wrap">
+                    <h2>NEWS IN MEDIA</h2>
+                    <ul>
+                        <li class="new">
+                            <a href="#">
+                                <span class="txt">Korea Export Recovery Continues With Daily Shipments Rising</span>
+                                <span class="date">2020-11-06</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="txt">South Korea sees dramatic leap in foreign direct investments in Q3 as confidence returns (SCMP)</span>
+                                <span class="date">2020-11-06</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="btn_more" href="#">MORE</a>
+                </section>
+                <!-- news_wrap 끝 -->
+                <!-- slide_wrap1 시작 -->
+                <div id="slide1" class="slide_wrap1">
+                    <div class="sliderBox">
+                        <ul>
+                            <li><a href="#"><img src="../../../images/site/eng/main/slide1_img_1.png" /></a></li>
+                            <li><a href="#"><img src="../../../images/site/eng/main/slide1_img_2.png" /></a></li>
+                            <li><a href="#"><img src="../../../images/site/eng/main/slide1_img_3.png" /></a></li>
+                        </ul>
+                    </div>
+                    <div class="controlBox">
+                        <div>
+                            <button type="button" class="btn_stop" style="display: block;"><span>STOP</span></button>
+                            <button type="button" class="btn_play" style="display: none;"><span>PLAY</span></button>
+                            <button type="button" class="btn_prev"><span>PREV</span></button>
+                            <button type="button" class="btn_next"><span>NEXT</span></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide_wrap1 끝 -->
+            </div>
+            <div class="wGroup n2">
+                <section class="press_wrap">
+                    <h2>PRESS RELEASES</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="txt">Government to promote middle Government to promote middle</span>
+                                <span class="date">2020-11-13</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="txt">Government to promote middle Government to promote middle</span>
+                                <span class="date">2020-11-13</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="txt">Government to promote middle Government to promote middle</span>
+                                <span class="date">2020-11-13</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="btn_more" href="#">MORE</a>
+                </section>
+                <!-- slide_wrap1 시작 -->
+                <div id="slide2" class="slide_wrap2">
+                    <div class="sliderBox">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="thumb">
+                                        <img src="../../../images/site/eng/main/slide2_img_1.png" />
+                                    </span>
+                                    <span class="txt">Korea, Indonesia agree to work together to overcome economic challen</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="thumb">
+                                        <img src="../../../images/site/eng/main/slide2_img_2.png" />
+                                    </span>
+                                    <span class="txt">Korea, Indonesia agree to work together to overcome economic challen</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="thumb">
+                                        <img src="../../../images/site/eng/main/slide2_img_3.png" />
+                                    </span>
+                                    <span class="txt">Korea, Indonesia agree to work together to overcome economic challen</span>
+                                </a>
+                            </li>
+                        </ul> 
+                    </div>
+                    <div class="controlBox">
+                        <div>
+                            <button type="button" class="btn_prev"><span>PREV</span></button>
+                            <button type="button" class="btn_next"><span>NEXT</span></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide_wrap1 끝 -->
+                <!-- network_wrap 시작 -->
+                <section class="network_wrap">
+                    <h2>KOREA'S FTA NETWORK</h2>
+                    <a href="#">GO</a>
+                </section> 
+                <!-- network_wrap 끝 -->
+                <!-- invest_wrap 시작 -->
+                <section class="invest_wrap">
+                    <h2>INVEST KOREA</h2>
+                    <ul>
+                        <li class="n1 on">
+                            <a href="#">
+                                <span class="txt">1KOTRA Express June 2020</span>
+                                <span class="thumb">
+                                    <img src="../../../images/site/eng/main/invest_thumb_1.png" />
+                                </span>
+                            </a>
+                        </li>
+                        <li class="n2">
+                            <a href="#">
+                                <span class="txt">2KOTRA Express June 2020</span>
+                                <span class="thumb">
+                                    <img src="../../../images/site/eng/main/invest_thumb_2.png" />
+                                </span>
+                            </a>
+                        </li>
+                        <li class="n3">
+                            <a href="#">
+                                <span class="txt">3KOTRA Express June 2020</span>
+                                <span class="thumb">
+                                    <img src="../../../images/site/eng/main/invest_thumb_3.png" />
+                                </span>
+                            </a>
+                        </li>
+                        <li class="n4">
+                            <a href="#">
+                                <span class="txt">4KOTRA Express June 2020</span>
+                                <span class="thumb">
+                                    <img src="../../../images/site/eng/main/invest_thumb_4.png" />
+                                </span>
+                            </a>
+                        </li>
+                        <li class="n5">
+                            <a href="#">
+                                <span class="txt">5KOTRA Express June 2020</span>
+                                <span class="thumb">
+                                    <img src="../../../images/site/eng/main/invest_thumb_5.png" />
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="controlBox">
+                        <a class="btn_prev"><span>PREV</span></a>
+                        <a class="btn_next"><span>NEXT</span></a>
+                    </div>
+                    <a class="btn_more" href="#">MORE</a>
+                </section>
+                <!-- invest_wrap 끝 -->
+            </div>
+            <!-- banner_wrap 시작 -->
+            <div class="banner_wrap">
+                <ul>
+                    <li><a href="#">Industry</a></li>
+                    <li><a href="#">Trade/Investment</a></li>
+                    <li><a href="#">FTA/Economic Cooperation</a></li>
+                    <li><a href="#">Energy</a></li>
+                </ul>
+            </div>
+            <!-- banner_wrap 끝 -->
+            <!-- trade_wrap 시작 -->
+            <section class="trade_wrap">
+                <h2>TRADE BALANCE<span>Unit: $1,000</span></h2>
+                <table>
+                    <colgroup>
+                        <col style="width: 20%;" />
+                        <col style="width: 35%;" />
+                        <col style="width: 45%;" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">YEAR</th>
+                            <th scope="col">EXPORT VALUE</th>
+                            <th scope="col">IMPORT VALUE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="year">2020</td>
+                            <td>201,508,401</td>
+                            <td>194,430,182</td>
+                        </tr>
+                        <tr>
+                            <td class="year">2019</td>
+                            <td>542,232,610</td>
+                            <td>503,342,947</td>
+                        </tr>
+                        <tr>
+                            <td class="year">2017</td>
+                            <td>573,694,421</td>
+                            <td>478,478,296</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a class="btn_more" href="#">MORE</a>
+            </section>
+            <!-- trade_wrap 끝 -->
+            <!-- sns_wrap 시작 -->
+            <section class="sns_wrap">
+                <h2>FACEBOOK</h2>
+                <ul class="btn">
+                    <li class="tw"><a href="#">TWITTER</a></li>
+                    <li class="em"><a href="#">EMAIL</a></li>
+                </ul>
+                <div class="live">
+                    <div class="scroll">
+                        <article>
+                            <div class="tit">
+                                <span class="mark"><img src="../../../images/site/eng/main/sns_live_icon.png"/></span>
+                                <h2>Ministry of Trade, Industry & Energy - Republic of Korea</h2>
+                                <span class="date">4:22 PM yesterday</span>
+                            </div>
+                            <div class="txt">
+                                <div class="thumb">
+                                    <img src="../../../images/site/eng/main/sns_txt_img.png"/>
+                                    <p>Industry Ministry announces digital transformation initiatives to reach $2 trillion in trade</p>
+                                    <p>Trade, Industry and Energy Minister Sung Yun-mo attended a trade strategy adjustment meeting</p>
+                                </div>
+                                <p>chaired by Prime Minister Chung Sye-kyun at Korea Trade-Investment Promotion Agency (KOTRA) on November 13, and announced digital</p>
+                            </div>
+                            <a href="#">GO</a>
+                        </article>
+                        <article>
+                            <div class="tit">
+                                <span class="mark"><img src="../../../images/site/eng/main/sns_live_icon.png"/></span>
+                                <h2>Ministry of Trade, Industry & Energy - Republic of Korea</h2>
+                                <span class="date">4:22 PM yesterday</span>
+                            </div>
+                            <div class="txt">
+                                <div class="thumb">
+                                    <img src="../../../images/site/eng/main/sns_txt_img.png"/>
+                                    <p>Industry Ministry announces digital transformation initiatives to reach $2 trillion in trade</p>
+                                    <p>Trade, Industry and Energy Minister Sung Yun-mo attended a trade strategy adjustment meeting</p>
+                                </div>
+                                <p>chaired by Prime Minister Chung Sye-kyun at Korea Trade-Investment Promotion Agency (KOTRA) on November 13, and announced digital</p>
+                            </div>
+                            <a href="#">GO</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- sns_wrap 끝 -->
+            <!-- market_wrap 시작 -->
+            <section class="market_wrap">
+                <h2>MARKET<span>(2020-11-13)</span></h2>
+                <ul>
+                    <li class="n1">
+                        <strong>KOSPI</strong>
+                        <span class="up">2,493.87</span>
+                        <span>18.25</span>
+                    </li>
+                    <li class="n2">
+                        <strong>Exchange Rate</strong>
+                        <span class="down">1,115.60</span>
+                        <span>0.80</span>
+                    </li>
+                    <li class="n3">
+                        <strong>Oil($/B,Dubai)</strong>
+                        <span class="up">43.95</span>
+                        <span>0.49</span>
+                    </li>
+                </ul>
+            </section>
+            <!-- market_wrap 끝 -->
+            <!-- news2_wrap 시작 -->
+            <section class="news2_wrap">
+                <h2>KOREA.NET News</h2>
+                <ul>
+                    <li>
+                        <span class="thumb">
+                            <img src="../../../images/site/eng/main/news2_thumb_img1.png"/>
+                        </span>
+                        <strong>Failure to wear mask in public to incur KRW 100K fine</strong>
+                        <p>Nov 13, 2020</p>
+                        <a href="#">GO</a>
+                    </li>
+                    <li>
+                        <span class="thumb">
+                            <img src="../../../images/site/eng/main/news2_thumb_img2.png"/>
+                        </span>
+                        <strong>Gov't pledges USD 10M for COVID-19 vaccines to developing nations</strong>
+                        <p>Nov 13, 2020</p>
+                        <a href="#">GO</a>
+                    </li>
+                    <li>
+                        <span class="thumb">
+                            <img src="../../../images/site/eng/main/news2_thumb_img3.png"/>
+                        </span>
+                        <strong>President's 1st chat with next US leader attracts foreign coverage</strong>
+                        <p>Nov 13, 2020</p>
+                        <a href="#">GO</a>
+                    </li>
+                    <li>
+                        <span class="thumb">
+                            <img src="../../../images/site/eng/main/news2_thumb_img4.png"/>
+                        </span>
+                        <strong>OECD hails Incheon airport, Kakao Mobility for COVID-19 responses</strong>
+                        <p>Nov 13, 2020</p>
+                        <a href="#">GO</a>
+                    </li>
+                </ul>
+                <a class="btn_more" href="#">MORE</a>
+            </section>
+            <!-- news2_wrap 끝 -->
+            <!-- site_wrap 시작 -->
+            <div id="slider_site" class="site_wrap">
+                <div class="grap">
+                    <ul class="obj">
+                        <li class="item"><a href="#"><img src="../../../images/site/eng/main/site_logo_1.png"/></a></li>
+                        <li class="item"><a href="#"><img src="../../../images/site/eng/main/site_logo_2.png"/></a></li>
+                    </ul>
+                </div>
+                <div class="control">
+                    <button type="button" data-control="prev" class="btn_prev"><span>PREV</span></button>
+                    <button type="button" data-control="next" class="btn_next"><span>NEXT</span></button>
+                </div>
+            </div>
+            <!-- site_wrap 끝 -->
+        </div>
+        <span class="bg_wrap">
+            <span class="bg1"></span>
+            <span class="bg2"></span>
+            <span class="bg3"></span>
+            <span class="bg4"></span>
+        </span>
+    </div>
+    <!-- body_layout 끝 --> 
+    <!-- foot_layout 시작 -->
+    <div id="foot_layout">
+        <footer class="foot_wrap">
+            <address>
+                © 2016 Ministry of Trade, Industry and Energy.<br>All Rights Reserved. 402 Hannuri-daero, Sejong-si, 30118, Republic of Korea
+            </address>
+            <ul class="mark">
+                <li class="wa"><a href="#">한국 웹접근성인증마크</a></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- foot_layout 끝 -->
+</body>
+</html>
